@@ -5332,6 +5332,12 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         route: "/news",
         name: "Новини"
+      }, {
+        route: "/schoolboy",
+        name: "Учням"
+      }, {
+        route: "/parents",
+        name: "Батькам"
       }]
     };
   }
@@ -5474,6 +5480,14 @@ var news = function news() {
   return __webpack_require__.e(/*! import() */ "resources_js_components_news_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/news.vue */ "./resources/js/components/news.vue"));
 };
 
+var schoolboy = function schoolboy() {
+  return __webpack_require__.e(/*! import() */ "resources_js_components_schoolboy_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/schoolboy.vue */ "./resources/js/components/schoolboy.vue"));
+};
+
+var parents = function parents() {
+  return __webpack_require__.e(/*! import() */ "resources_js_components_parents_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/parents.vue */ "./resources/js/components/parents.vue"));
+};
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
   path: '/',
   component: home,
@@ -5482,6 +5496,14 @@ var news = function news() {
   path: '/news',
   component: news,
   name: 'news'
+}, {
+  path: '/schoolboy',
+  component: schoolboy,
+  name: 'schoolboy'
+}, {
+  path: '/parents',
+  component: parents,
+  name: 'parents'
 }]);
 
 /***/ }),
@@ -44123,7 +44145,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","G:\\\\xampp\\\\htdocs\\\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_home_vue":1,"resources_js_components_news_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_home_vue":1,"resources_js_components_news_vue":1,"resources_js_components_schoolboy_vue":1,"resources_js_components_parents_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

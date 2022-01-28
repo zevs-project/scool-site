@@ -23,6 +23,14 @@ export default {
                     route: "/news",
                     name: "Новини",
                 },
+                 {
+                    route: "/schoolboy",
+                    name: "Учням",
+                },
+                {
+                    route: "/parents",
+                    name: "Батькам",
+                },
             ],
         };
     },
@@ -43,6 +51,7 @@ export default {
     .logo {
         font-family: $fontPacifico;
         font-size: 1.5rem;
+        padding: 0 5px;
     }
 
     nav {
