@@ -10576,7 +10576,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".navigation[data-v-5ce47ec2] {\n  display: flex;\n  justify-content: space-between;\n  padding: 20px 0;\n  max-width: 1200px;\n  width: 100%;\n  margin: 0 auto;\n}\n.navigation .logo[data-v-5ce47ec2] {\n  font-family: \"Pacifico\", cursive;\n  font-size: 1.5rem;\n}\n.navigation nav[data-v-5ce47ec2] {\n  display: flex;\n  align-items: center;\n  padding: 5px;\n}\n.navigation nav a[data-v-5ce47ec2] {\n  padding: 5px;\n  text-decoration: none;\n  font-size: 1.2rem;\n}\n.navigation nav a[data-v-5ce47ec2]:visited {\n  color: inherit;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".navigation[data-v-5ce47ec2] {\n  display: flex;\n  justify-content: space-between;\n  padding: 20px 0;\n  max-width: 1200px;\n  width: 100%;\n  margin: 0 auto;\n}\n.navigation .logo[data-v-5ce47ec2] {\n  font-family: \"Pacifico\", cursive;\n  font-size: 1.5rem;\n  padding: 0 5px;\n}\n.navigation nav[data-v-5ce47ec2] {\n  display: flex;\n  align-items: center;\n  padding: 5px;\n}\n.navigation nav a[data-v-5ce47ec2] {\n  padding: 5px;\n  text-decoration: none;\n  font-size: 1.2rem;\n}\n.navigation nav a[data-v-5ce47ec2]:visited {\n  color: inherit;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -1,19 +1,19 @@
 <template>
     <div class="home-wrapper">
-        <VueSlickCarousel v-bind="carouselConfig" class="carousel">
-            <div class="slide">
+        <carousel class="carousel" v-bind="carouselConfig1">
+            <slide class="slide">
                 <div class="img-placeholder"></div>
                 <img :src="image1" alt="Image 1" />
-            </div>
-            <div class="slide">
+            </slide>
+            <slide class="slide">
                 <div class="img-placeholder"></div>
                 <img :src="image2" alt="Image 2" />
-            </div>
-            <div class="slide">
+            </slide>
+            <slide class="slide">
                 <div class="img-placeholder"></div>
                 <img :src="image3" alt="Image 3" />
-            </div>
-        </VueSlickCarousel>
+            </slide>
+        </carousel>
 
         <div class="home-content-block about-us">
             <h2 class="home-content-title">Наші віддмінності</h2>
@@ -27,8 +27,8 @@
         </div>
 
         <div class="home-content-block news">
-            <VueSlickCarousel v-bind="carouselConfig2" class="carousel">
-                <div class="slide">
+            <carousel class="carousel" v-bind="carouselConfig2">
+                <slide class="slide">
                     <a class="news-link">
                         <img :src="image1" alt="Image 1" />
 
@@ -45,8 +45,8 @@
                             >
                         </div>
                     </a>
-                </div>
-                <div class="slide">
+                </slide>
+                <slide class="slide">
                     <a class="news-link">
                         <img :src="image1" alt="Image 1" />
                         <time datetime="2001-05-15 19:00">15 мая</time>
@@ -59,8 +59,8 @@
                             asperiores provident sed?</span
                         >
                     </a>
-                </div>
-                <div class="slide">
+                </slide>
+                <slide class="slide">
                     <a class="news-link">
                         <img :src="image1" alt="Image 1" />
                         <time datetime="2001-05-15 19:00">15 мая</time>
@@ -73,17 +73,14 @@
                             asperiores provident sed?</span
                         >
                     </a>
-                </div>
-            </VueSlickCarousel>
+                </slide>
+            </carousel>
         </div>
     </div>
 </template>
 
 <script>
-import VueSlickCarousel from "vue-slick-carousel";
-import "vue-slick-carousel/dist/vue-slick-carousel.css";
-// optional style for arrows & dots
-import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
+import { Carousel, Slide } from "vue-carousel";
 import image1 from "../../../public/images/image1.jpg";
 import image2 from "../../../public/images/image2.jpg";
 import image3 from "../../../public/images/image3.jpg";
@@ -91,20 +88,19 @@ import image3 from "../../../public/images/image3.jpg";
 export default {
     name: "home",
     components: {
-        VueSlickCarousel,
+        Carousel,
+        Slide,
     },
     data() {
         return {
             image1,
             image2,
             image3,
-            carouselConfig: {
-                autoplaySpeed: 2000,
-                arrows: true,
-                dots: true,
+            carouselConfig1: {
+                centerMode: true,
                 autoplay: false,
-                variableWidth: false,
-                adaptiveHeight: false,
+                autoplayTimeout: 2500,
+                loop: true,
             },
             carouselConfig2: {
                 autoplaySpeed: 2000,
@@ -118,7 +114,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../sass/_variables';
+@import "../../sass/_variables";
 .home-wrapper {
     width: 100%;
 
@@ -126,24 +122,19 @@ export default {
         width: 100%;
         max-height: $maxHeightSLider1;
 
-        ::v-deep .slick-slide {
-            max-height: $maxHeightSLider1;
+        .slide {
+            position: relative;
+            border: red 1px;
+            width: 100%;
 
-            .slide {
-                position: relative;
-                border: red 1px;
+            .img-placeholder {
+                padding-top: 100%;
                 width: 100%;
+                position: absolute;
+            }
 
-                .img-placeholder {
-                    padding-top: 100%;
-                    width: 100%;
-                    position: absolute;
-                }
-
-                img {
-                    width: 100%;
-                    height: auto;
-                }
+            img {
+                height: 100%;
             }
         }
     }
