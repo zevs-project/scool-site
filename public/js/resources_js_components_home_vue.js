@@ -116,7 +116,11 @@ __webpack_require__.r(__webpack_exports__);
         centerMode: true,
         autoplay: false,
         autoplayTimeout: 2500,
-        loop: true
+        loop: true,
+        perPage: 1,
+        navigationEnabled: true,
+        navigationPrevLabel: "",
+        navigationNextLabel: ""
       },
       carouselConfig2: {
         autoplaySpeed: 2000,
@@ -147,7 +151,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".home-wrapper[data-v-fa6affac] {\n  width: 100%;\n}\n.home-wrapper .carousel[data-v-fa6affac] {\n  width: 100%;\n  max-height: 600px;\n}\n.home-wrapper .carousel .slide[data-v-fa6affac] {\n  position: relative;\n  border: red 1px;\n  width: 100%;\n}\n.home-wrapper .carousel .slide .img-placeholder[data-v-fa6affac] {\n  padding-top: 100%;\n  width: 100%;\n  position: absolute;\n}\n.home-wrapper .carousel .slide img[data-v-fa6affac] {\n  width: 100%;\n  height: 100%;\n}\n.home-wrapper .home-content-block[data-v-fa6affac] {\n  width: 100%;\n  padding: 30px 15px;\n  margin: 30px 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.home-wrapper .home-content-block .home-content-title[data-v-fa6affac] {\n  font-size: 2rem;\n  font-weight: bold;\n}\n.home-wrapper .home-content-block.about-us .article[data-v-fa6affac] {\n  font-size: 1.2rem;\n  max-width: 80%;\n  padding-top: 20px;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link[data-v-fa6affac] {\n  text-decoration: none;\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link .news-info-wrapper[data-v-fa6affac] {\n  width: 100%;\n  display: flex;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".home-wrapper[data-v-fa6affac] {\n  width: 100%;\n}\n.home-wrapper .carousel[data-v-fa6affac] {\n  width: 100%;\n  max-height: 600px;\n}\n.home-wrapper .carousel .slide[data-v-fa6affac] {\n  width: 100%;\n}\n.home-wrapper .carousel .slide .img-placeholder[data-v-fa6affac] {\n  padding-top: 100%;\n  width: 100%;\n  position: absolute;\n}\n.home-wrapper .carousel .slide img[data-v-fa6affac] {\n  height: auto;\n  width: 100%;\n}\n.home-wrapper .carousel[data-v-fa6affac]  .VueCarousel-navigation-prev {\n  transform: translateY(-180%) translateX(20%);\n  border-radius: 50%;\n  background: #fff;\n  width: 30px;\n  height: 30px;\n  color: red;\n}\n.home-wrapper .carousel[data-v-fa6affac]  .VueCarousel-navigation-prev::before {\n  display: block;\n  content: \"<\";\n  font-size: 31px;\n  font-weight: 700;\n  line-height: 1;\n  height: 100%;\n  transform: translateY(-78%) translateX(-36%);\n}\n.home-wrapper .carousel[data-v-fa6affac]  .VueCarousel-navigation-next {\n  border-radius: 50%;\n  background: #fff;\n  width: 30px;\n  height: 30px;\n  transform: translateY(-180%) translateX(-20%);\n}\n.home-wrapper .carousel[data-v-fa6affac]  .VueCarousel-navigation-next::before {\n  display: block;\n  content: \">\";\n  font-size: 31px;\n  font-weight: 700;\n  line-height: 1;\n  height: 100%;\n  transform: translateY(-78%) translateX(-36%);\n}\n.home-wrapper .home-content-block[data-v-fa6affac] {\n  width: 100%;\n  padding: 30px 15px;\n  margin: 30px 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.home-wrapper .home-content-block .home-content-title[data-v-fa6affac] {\n  font-size: 2rem;\n  font-weight: bold;\n}\n.home-wrapper .home-content-block.about-us .article[data-v-fa6affac] {\n  font-size: 1.2rem;\n  max-width: 80%;\n  padding-top: 20px;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link[data-v-fa6affac] {\n  text-decoration: none;\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link .news-info-wrapper[data-v-fa6affac] {\n  width: 100%;\n  display: flex;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -101,6 +101,10 @@ export default {
                 autoplay: false,
                 autoplayTimeout: 2500,
                 loop: true,
+                perPage: 1,
+                navigationEnabled: true,
+                navigationPrevLabel: "",
+                navigationNextLabel: "",
             },
             carouselConfig2: {
                 autoplaySpeed: 2000,
@@ -123,8 +127,6 @@ export default {
         max-height: $maxHeightSLider1;
 
         .slide {
-            position: relative;
-            border: red 1px;
             width: 100%;
 
             .img-placeholder {
@@ -134,7 +136,44 @@ export default {
             }
 
             img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        ::v-deep .VueCarousel-navigation-prev {
+            transform: translateY(-180%) translateX(20%);
+            border-radius: 50%;
+            background: #fff;
+            width: 30px;
+            height: 30px;
+            color: red;
+
+            &::before {
+                display: block;
+                content: "<";
+                font-size: 31px;
+                font-weight: 700;
+                line-height: 1;
                 height: 100%;
+                transform: translateY(-78%) translateX(-36%);
+            }
+        }
+        ::v-deep .VueCarousel-navigation-next {
+            border-radius: 50%;
+            background: #fff;
+            width: 30px;
+            height: 30px;
+            transform: translateY(-180%) translateX(-20%);
+
+            &::before {
+                display: block;
+                content: "\003E";
+                font-size: 31px;
+                font-weight: 700;
+                line-height: 1;
+                height: 100%;
+                transform: translateY(-78%) translateX(-36%);
             }
         }
     }
