@@ -97,6 +97,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -114,18 +141,13 @@ __webpack_require__.r(__webpack_exports__);
       image3: _public_images_image3_jpg__WEBPACK_IMPORTED_MODULE_3__["default"],
       carouselConfig1: {
         centerMode: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 2500,
         loop: true,
         perPage: 1,
         navigationEnabled: true,
         navigationPrevLabel: "",
         navigationNextLabel: ""
-      },
-      carouselConfig2: {
-        autoplaySpeed: 2000,
-        arrows: true,
-        dots: true
       }
     };
   },
@@ -151,7 +173,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".home-wrapper[data-v-fa6affac] {\n  width: 100%;\n}\n.home-wrapper .carousel[data-v-fa6affac] {\n  width: 100%;\n  max-height: 600px;\n}\n.home-wrapper .carousel .slide[data-v-fa6affac] {\n  width: 100%;\n}\n.home-wrapper .carousel .slide .img-placeholder[data-v-fa6affac] {\n  padding-top: 100%;\n  width: 100%;\n  position: absolute;\n}\n.home-wrapper .carousel .slide img[data-v-fa6affac] {\n  height: auto;\n  width: 100%;\n}\n.home-wrapper .carousel[data-v-fa6affac]  .VueCarousel-navigation-prev {\n  transform: translateY(-180%) translateX(20%);\n  border-radius: 50%;\n  background: #fff;\n  width: 30px;\n  height: 30px;\n  color: red;\n}\n.home-wrapper .carousel[data-v-fa6affac]  .VueCarousel-navigation-prev::before {\n  display: block;\n  content: \"<\";\n  font-size: 31px;\n  font-weight: 700;\n  line-height: 1;\n  height: 100%;\n  transform: translateY(-78%) translateX(-36%);\n}\n.home-wrapper .carousel[data-v-fa6affac]  .VueCarousel-navigation-next {\n  border-radius: 50%;\n  background: #fff;\n  width: 30px;\n  height: 30px;\n  transform: translateY(-180%) translateX(-20%);\n}\n.home-wrapper .carousel[data-v-fa6affac]  .VueCarousel-navigation-next::before {\n  display: block;\n  content: \">\";\n  font-size: 31px;\n  font-weight: 700;\n  line-height: 1;\n  height: 100%;\n  transform: translateY(-78%) translateX(-36%);\n}\n.home-wrapper .home-content-block[data-v-fa6affac] {\n  width: 100%;\n  padding: 30px 15px;\n  margin: 30px 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.home-wrapper .home-content-block .home-content-title[data-v-fa6affac] {\n  font-size: 2rem;\n  font-weight: bold;\n}\n.home-wrapper .home-content-block.about-us .article[data-v-fa6affac] {\n  font-size: 1.2rem;\n  max-width: 80%;\n  padding-top: 20px;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link[data-v-fa6affac] {\n  text-decoration: none;\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link .news-info-wrapper[data-v-fa6affac] {\n  width: 100%;\n  display: flex;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".home-wrapper[data-v-fa6affac] {\n  width: 100%;\n}\n.home-wrapper #carousel1[data-v-fa6affac] {\n  width: 100%;\n  max-height: 600px;\n}\n.home-wrapper #carousel1 .slide[data-v-fa6affac] {\n  width: 100%;\n}\n.home-wrapper #carousel1 .slide .img-placeholder[data-v-fa6affac] {\n  padding-top: 100%;\n  width: 100%;\n  position: absolute;\n}\n.home-wrapper #carousel1 .slide img[data-v-fa6affac] {\n  height: auto;\n  width: 100%;\n}\n.home-wrapper #carousel1[data-v-fa6affac]  .VueCarousel-navigation-button {\n  border-radius: 50%;\n  background: #fff;\n  width: 30px;\n  height: 30px;\n}\n.home-wrapper #carousel1[data-v-fa6affac]  .VueCarousel-navigation-button::before {\n  position: absolute;\n  display: block;\n  font-size: 25px;\n  font-weight: 700;\n  line-height: 1;\n  height: 100%;\n  width: 100%;\n  left: 0;\n  top: 0;\n  text-align: center;\n}\n.home-wrapper #carousel1[data-v-fa6affac]  .VueCarousel-navigation-button.VueCarousel-navigation-prev {\n  transform: translateY(-50%) translateX(10%);\n}\n.home-wrapper #carousel1[data-v-fa6affac]  .VueCarousel-navigation-button.VueCarousel-navigation-prev::before {\n  content: \"<\";\n}\n.home-wrapper #carousel1[data-v-fa6affac]  .VueCarousel-navigation-button.VueCarousel-navigation-next {\n  transform: translateY(-50%) translateX(-10%);\n}\n.home-wrapper #carousel1[data-v-fa6affac]  .VueCarousel-navigation-button.VueCarousel-navigation-next::before {\n  content: \">\";\n}\n.home-wrapper .home-content-block[data-v-fa6affac] {\n  width: 100%;\n  padding: 30px 15px;\n  margin: 30px 0;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.home-wrapper .home-content-block .home-content-title[data-v-fa6affac] {\n  font-size: 2rem;\n  font-weight: bold;\n}\n.home-wrapper .home-content-block.about-us .article[data-v-fa6affac] {\n  font-size: 1.2rem;\n  max-width: 80%;\n  padding-top: 20px;\n}\n.home-wrapper .home-content-block.news .news-wrapper[data-v-fa6affac] {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: flex-start;\n  width: 70%;\n  padding: 20px 0 0 0;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link[data-v-fa6affac] {\n  text-decoration: none;\n  display: flex;\n  flex-direction: column;\n  flex-basis: 25%;\n  padding: 20px 10px;\n  color: inherit;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link[data-v-fa6affac]:visited, .home-wrapper .home-content-block.news .news-wrapper .news-link[data-v-fa6affac]:active {\n  color: inherit;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link[data-v-fa6affac]:hover {\n  cursor: pointer;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link .news-thumb[data-v-fa6affac] {\n  width: 100%;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link .news-info-wrapper[data-v-fa6affac] {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  padding-top: 10px;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link .news-info-wrapper .news-title[data-v-fa6affac] {\n  text-align: center;\n  font-size: 1.2rem;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link .news-info-wrapper .news-short[data-v-fa6affac] {\n  font-size: 1rem;\n  padding-bottom: 10px;\n}\n.home-wrapper .home-content-block.news .news-wrapper .news-link .news-info-wrapper time[data-v-fa6affac] {\n  font-size: 0.8rem;\n  color: #7f7a7a;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -358,7 +380,7 @@ var render = function () {
       _c(
         "carousel",
         _vm._b(
-          { staticClass: "carousel" },
+          { staticClass: "carousel", attrs: { id: "carousel1" } },
           "carousel",
           _vm.carouselConfig1,
           false
@@ -387,82 +409,67 @@ var render = function () {
       _vm._v(" "),
       _vm._m(0),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "home-content-block news" },
-        [
-          _c(
-            "carousel",
-            _vm._b(
-              { staticClass: "carousel" },
-              "carousel",
-              _vm.carouselConfig2,
-              false
-            ),
-            [
-              _c("slide", { staticClass: "slide" }, [
-                _c("a", { staticClass: "news-link" }, [
-                  _c("img", { attrs: { src: _vm.image1, alt: "Image 1" } }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "news-info-wrapper" }, [
-                    _c("time", { attrs: { datetime: "2001-05-15 19:00" } }, [
-                      _vm._v("15 мая"),
-                    ]),
-                    _vm._v(" "),
-                    _c("h5", { staticClass: "news-title" }, [
-                      _vm._v("Title 1"),
-                    ]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "news-short" }, [
-                      _vm._v(
-                        "Lorem ipsum dolor sit amet consectetur\n                            adipisicing elit. Adipisci voluptates rem ea sit\n                            sequi esse? Cumque labore quia neque eligendi\n                            repellendus enim pariatur, amet adipisci\n                            accusantium fugiat asperiores provident\n                            sed?"
-                      ),
-                    ]),
-                  ]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("slide", { staticClass: "slide" }, [
-                _c("a", { staticClass: "news-link" }, [
-                  _c("img", { attrs: { src: _vm.image1, alt: "Image 1" } }),
-                  _vm._v(" "),
-                  _c("time", { attrs: { datetime: "2001-05-15 19:00" } }, [
-                    _vm._v("15 мая"),
-                  ]),
-                  _vm._v(" "),
-                  _c("h5", { staticClass: "news-title" }, [_vm._v("Title 1")]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "news-short" }, [
-                    _vm._v(
-                      "Lorem ipsum dolor sit amet consectetur adipisicing\n                        elit. Adipisci voluptates rem ea sit sequi esse?\n                        Cumque labore quia neque eligendi repellendus enim\n                        pariatur, amet adipisci accusantium fugiat\n                        asperiores provident sed?"
-                    ),
-                  ]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("slide", { staticClass: "slide" }, [
-                _c("a", { staticClass: "news-link" }, [
-                  _c("img", { attrs: { src: _vm.image1, alt: "Image 1" } }),
-                  _vm._v(" "),
-                  _c("time", { attrs: { datetime: "2001-05-15 19:00" } }, [
-                    _vm._v("15 мая"),
-                  ]),
-                  _vm._v(" "),
-                  _c("h5", { staticClass: "news-title" }, [_vm._v("Title 1")]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "news-short" }, [
-                    _vm._v(
-                      "Lorem ipsum dolor sit amet consectetur adipisicing\n                        elit. Adipisci voluptates rem ea sit sequi esse?\n                        Cumque labore quia neque eligendi repellendus enim\n                        pariatur, amet adipisci accusantium fugiat\n                        asperiores provident sed?"
-                    ),
-                  ]),
-                ]),
-              ]),
-            ],
-            1
-          ),
-        ],
-        1
-      ),
+      _c("div", { staticClass: "home-content-block news" }, [
+        _c("h2", { staticClass: "home-content-title news-title" }, [
+          _vm._v("Новини"),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "news-wrapper" }, [
+          _c("a", { staticClass: "news-link" }, [
+            _c("img", {
+              staticClass: "news-thumb",
+              attrs: { src: _vm.image1, alt: "Image 1" },
+            }),
+            _vm._v(" "),
+            _vm._m(1),
+          ]),
+          _vm._v(" "),
+          _c("a", { staticClass: "news-link" }, [
+            _c("img", {
+              staticClass: "news-thumb",
+              attrs: { src: _vm.image1, alt: "Image 1" },
+            }),
+            _vm._v(" "),
+            _vm._m(2),
+          ]),
+          _vm._v(" "),
+          _c("a", { staticClass: "news-link" }, [
+            _c("img", {
+              staticClass: "news-thumb",
+              attrs: { src: _vm.image1, alt: "Image 1" },
+            }),
+            _vm._v(" "),
+            _vm._m(3),
+          ]),
+          _vm._v(" "),
+          _c("a", { staticClass: "news-link" }, [
+            _c("img", {
+              staticClass: "news-thumb",
+              attrs: { src: _vm.image1, alt: "Image 1" },
+            }),
+            _vm._v(" "),
+            _vm._m(4),
+          ]),
+          _vm._v(" "),
+          _c("a", { staticClass: "news-link" }, [
+            _c("img", {
+              staticClass: "news-thumb",
+              attrs: { src: _vm.image1, alt: "Image 1" },
+            }),
+            _vm._v(" "),
+            _vm._m(5),
+          ]),
+          _vm._v(" "),
+          _c("a", { staticClass: "news-link" }, [
+            _c("img", {
+              staticClass: "news-thumb",
+              attrs: { src: _vm.image1, alt: "Image 1" },
+            }),
+            _vm._v(" "),
+            _vm._m(6),
+          ]),
+        ]),
+      ]),
     ],
     1
   )
@@ -473,7 +480,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "home-content-block about-us" }, [
-      _c("h2", { staticClass: "home-content-title" }, [
+      _c("h2", { staticClass: "home-content-title about-us-title" }, [
         _vm._v("Наші віддмінності"),
       ]),
       _vm._v(" "),
@@ -481,6 +488,114 @@ var staticRenderFns = [
         _vm._v(
           "\n            Lorem ipsum, dolor sit amet consectetur adipisicing elit.\n            Perferendis, distinctio voluptas? Pariatur culpa sunt doloribus\n            molestiae officia aut ducimus incidunt illum ratione veniam vero\n            quaerat assumenda vitae, error sequi aliquid.\n        "
         ),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "news-info-wrapper" }, [
+      _c("h5", { staticClass: "news-title" }, [_vm._v("Title 1")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "news-short" }, [
+        _vm._v(
+          "Lorem ipsum dolor sit amet consectetur adipisicing\n                        elit."
+        ),
+      ]),
+      _vm._v(" "),
+      _c("time", { attrs: { datetime: "2001-05-15 19:00" } }, [
+        _vm._v("15 мая"),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "news-info-wrapper" }, [
+      _c("h5", { staticClass: "news-title" }, [_vm._v("Title 1")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "news-short" }, [
+        _vm._v(
+          "Lorem ipsum dolor sit amet consectetur adipisicing\n                        elit."
+        ),
+      ]),
+      _vm._v(" "),
+      _c("time", { attrs: { datetime: "2001-05-15 19:00" } }, [
+        _vm._v("15 мая"),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "news-info-wrapper" }, [
+      _c("h5", { staticClass: "news-title" }, [_vm._v("Title 1")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "news-short" }, [
+        _vm._v(
+          "Lorem ipsum dolor sit amet consectetur adipisicing\n                        elit."
+        ),
+      ]),
+      _vm._v(" "),
+      _c("time", { attrs: { datetime: "2001-05-15 19:00" } }, [
+        _vm._v("15 мая"),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "news-info-wrapper" }, [
+      _c("h5", { staticClass: "news-title" }, [_vm._v("Title 1")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "news-short" }, [
+        _vm._v(
+          "Lorem ipsum dolor sit amet consectetur adipisicing\n                        elit."
+        ),
+      ]),
+      _vm._v(" "),
+      _c("time", { attrs: { datetime: "2001-05-15 19:00" } }, [
+        _vm._v("15 мая"),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "news-info-wrapper" }, [
+      _c("h5", { staticClass: "news-title" }, [_vm._v("Title 1")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "news-short" }, [
+        _vm._v(
+          "Lorem ipsum dolor sit amet consectetur adipisicing\n                        elit."
+        ),
+      ]),
+      _vm._v(" "),
+      _c("time", { attrs: { datetime: "2001-05-15 19:00" } }, [
+        _vm._v("15 мая"),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "news-info-wrapper" }, [
+      _c("h5", { staticClass: "news-title" }, [_vm._v("Title 1")]),
+      _vm._v(" "),
+      _c("span", { staticClass: "news-short" }, [
+        _vm._v(
+          "Lorem ipsum dolor sit amet consectetur adipisicing\n                        elit."
+        ),
+      ]),
+      _vm._v(" "),
+      _c("time", { attrs: { datetime: "2001-05-15 19:00" } }, [
+        _vm._v("15 мая"),
       ]),
     ])
   },

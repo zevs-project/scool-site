@@ -1,6 +1,6 @@
 <template>
     <div class="home-wrapper">
-        <carousel class="carousel" v-bind="carouselConfig1">
+        <carousel id="carousel1" class="carousel" v-bind="carouselConfig1">
             <slide class="slide">
                 <div class="img-placeholder"></div>
                 <img :src="image1" alt="Image 1" />
@@ -16,7 +16,7 @@
         </carousel>
 
         <div class="home-content-block about-us">
-            <h2 class="home-content-title">Наші віддмінності</h2>
+            <h2 class="home-content-title about-us-title">Наші віддмінності</h2>
 
             <section class="article">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -27,54 +27,81 @@
         </div>
 
         <div class="home-content-block news">
-            <carousel class="carousel" v-bind="carouselConfig2">
-                <slide class="slide">
-                    <a class="news-link">
-                        <img :src="image1" alt="Image 1" />
+            <h2 class="home-content-title news-title">Новини</h2>
+            <div class="news-wrapper">
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
 
-                        <div class="news-info-wrapper">
-                            <time datetime="2001-05-15 19:00">15 мая</time>
-                            <h5 class="news-title">Title 1</h5>
-                            <span class="news-short"
-                                >Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Adipisci voluptates rem ea sit
-                                sequi esse? Cumque labore quia neque eligendi
-                                repellendus enim pariatur, amet adipisci
-                                accusantium fugiat asperiores provident
-                                sed?</span
-                            >
-                        </div>
-                    </a>
-                </slide>
-                <slide class="slide">
-                    <a class="news-link">
-                        <img :src="image1" alt="Image 1" />
-                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    <div class="news-info-wrapper">
                         <h5 class="news-title">Title 1</h5>
                         <span class="news-short"
                             >Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Adipisci voluptates rem ea sit sequi esse?
-                            Cumque labore quia neque eligendi repellendus enim
-                            pariatur, amet adipisci accusantium fugiat
-                            asperiores provident sed?</span
+                            elit.</span
                         >
-                    </a>
-                </slide>
-                <slide class="slide">
-                    <a class="news-link">
-                        <img :src="image1" alt="Image 1" />
                         <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
+
+                    <div class="news-info-wrapper">
                         <h5 class="news-title">Title 1</h5>
                         <span class="news-short"
                             >Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Adipisci voluptates rem ea sit sequi esse?
-                            Cumque labore quia neque eligendi repellendus enim
-                            pariatur, amet adipisci accusantium fugiat
-                            asperiores provident sed?</span
+                            elit.</span
                         >
-                    </a>
-                </slide>
-            </carousel>
+                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
+
+                    <div class="news-info-wrapper">
+                        <h5 class="news-title">Title 1</h5>
+                        <span class="news-short"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</span
+                        >
+                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
+
+                    <div class="news-info-wrapper">
+                        <h5 class="news-title">Title 1</h5>
+                        <span class="news-short"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</span
+                        >
+                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
+
+                    <div class="news-info-wrapper">
+                        <h5 class="news-title">Title 1</h5>
+                        <span class="news-short"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</span
+                        >
+                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
+
+                    <div class="news-info-wrapper">
+                        <h5 class="news-title">Title 1</h5>
+                        <span class="news-short"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</span
+                        >
+                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </template>
@@ -98,18 +125,13 @@ export default {
             image3,
             carouselConfig1: {
                 centerMode: true,
-                autoplay: false,
+                autoplay: true,
                 autoplayTimeout: 2500,
                 loop: true,
                 perPage: 1,
                 navigationEnabled: true,
                 navigationPrevLabel: "",
                 navigationNextLabel: "",
-            },
-            carouselConfig2: {
-                autoplaySpeed: 2000,
-                arrows: true,
-                dots: true,
             },
         };
     },
@@ -122,7 +144,7 @@ export default {
 .home-wrapper {
     width: 100%;
 
-    .carousel {
+    #carousel1 {
         width: 100%;
         max-height: $maxHeightSLider1;
 
@@ -141,39 +163,37 @@ export default {
             }
         }
 
-        ::v-deep .VueCarousel-navigation-prev {
-            transform: translateY(-180%) translateX(20%);
+        ::v-deep .VueCarousel-navigation-button {
             border-radius: 50%;
             background: #fff;
             width: 30px;
             height: 30px;
-            color: red;
 
             &::before {
+                position: absolute;
                 display: block;
-                content: "<";
-                font-size: 31px;
+                font-size: 25px;
                 font-weight: 700;
                 line-height: 1;
                 height: 100%;
-                transform: translateY(-78%) translateX(-36%);
+                width: 100%;
+                left: 0;
+                top: 0;
+                text-align: center;
             }
-        }
-        ::v-deep .VueCarousel-navigation-next {
-            border-radius: 50%;
-            background: #fff;
-            width: 30px;
-            height: 30px;
-            transform: translateY(-180%) translateX(-20%);
 
-            &::before {
-                display: block;
-                content: "\003E";
-                font-size: 31px;
-                font-weight: 700;
-                line-height: 1;
-                height: 100%;
-                transform: translateY(-78%) translateX(-36%);
+            &.VueCarousel-navigation-prev {
+                transform: translateY(-50%) translateX(10%);
+                &::before {
+                    content: "<";
+                }
+            }
+
+            &.VueCarousel-navigation-next {
+                transform: translateY(-50%) translateX(-10%);
+                &::before {
+                    content: ">";
+                }
             }
         }
     }
@@ -200,15 +220,53 @@ export default {
         }
         &.news {
             .news-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                width: 70%;
+                padding: 20px 0 0 0;
+
                 .news-link {
                     text-decoration: none;
                     display: flex;
                     flex-direction: column;
-                    width: 100%;
+                    flex-basis: 25%;
+                    padding: 20px 10px;
+                    color: inherit;
+
+                    &:visited,
+                    &:active {
+                        color: inherit;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    .news-thumb {
+                        width: 100%;
+                    }
 
                     .news-info-wrapper {
                         width: 100%;
                         display: flex;
+                        flex-direction: column;
+                        padding-top: 10px;
+
+                        .news-title {
+                            text-align: center;
+                            font-size: 1.2rem;
+                        }
+
+                        .news-short {
+                            font-size: 1rem;
+                            padding-bottom: 10px;
+                        }
+
+                        time {
+                            font-size: 0.8rem;
+                            color: $colorTime;
+                        }
                     }
                 }
             }
