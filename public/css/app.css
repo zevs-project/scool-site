@@ -11299,3 +11299,10 @@ body {
   flex-direction: column;
   margin: 0 auto;
 }
+
+a:visited, a:active {
+  color: inherit;
+}
+a:hover {
+  cursor: pointer;
+}

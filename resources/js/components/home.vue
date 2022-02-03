@@ -103,6 +103,42 @@
                 </a>
             </div>
         </div>
+
+        <div class="home-content-block address">
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5149.163795185347!2d27.79549415489231!3d49.81272759579979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472db78f1ef304dd%3A0x6a0a593c181be642!2z0JzQvtGC0L7QstC40LvRltCy0LrQsCwg0JbQuNGC0L7QvNC40YDRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMTMxNTA!5e0!3m2!1suk!2sua!4v1643923232775!5m2!1suk!2sua"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
+            </div>
+
+            <div class="address-wrapper">
+                <div class="address-info-block">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <address class="address-info">
+                        Мотовилівка, вул. 40-річчя Перемоги, 20
+                    </address>
+                </div>
+
+                <div class="address-info-block">
+                    <i class="fas fa-phone"></i>
+                    <a class="address-info" href="tel: +380981112222"
+                        >+380981112222</a
+                    >
+                </div>
+
+                <div class="address-info-block">
+                    <i class="far fa-envelope"></i>
+                    <a class="address-info" href="mailto: mail@mail.com"
+                        >mail@mail.com</a
+                    >
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -141,6 +177,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../sass/_variables";
+@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+
 .home-wrapper {
     width: 100%;
 
@@ -267,6 +305,39 @@ export default {
                             font-size: 0.8rem;
                             color: $colorTime;
                         }
+                    }
+                }
+            }
+        }
+
+        &.address {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .map-wrapper {
+                padding: 5px;
+            }
+
+            .address-wrapper {
+                padding: 5px 5px 5px 50px;
+
+                .address-info-block {
+                    display: flex;
+                    justify-content: flex-start;
+                    padding: 10px 0;
+
+                    .fas,
+                    .far {
+                        font-size: 1.5rem;
+                        color: $colorInfoIcon;
+                    }
+
+                    .address-info {
+                        font-size: 1.5rem;
+                        padding-left: 10px;
                     }
                 }
             }
