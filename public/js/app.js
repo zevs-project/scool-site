@@ -5488,22 +5488,30 @@ var parents = function parents() {
   return __webpack_require__.e(/*! import() */ "resources_js_components_parents_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/parents.vue */ "./resources/js/components/parents.vue"));
 };
 
+var test = function test() {
+  return __webpack_require__.e(/*! import() */ "resources_js_components_test_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/test.vue */ "./resources/js/components/test.vue"));
+};
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
-  path: '/',
+  path: "/",
   component: home,
-  name: 'home'
+  name: "home"
 }, {
-  path: '/news',
+  path: "/news",
   component: news,
-  name: 'news'
+  name: "news"
 }, {
-  path: '/schoolboy',
+  path: "/schoolboy",
   component: schoolboy,
-  name: 'schoolboy'
+  name: "schoolboy",
+  children: [{
+    path: "test",
+    component: test
+  }]
 }, {
-  path: '/parents',
+  path: "/parents",
   component: parents,
-  name: 'parents'
+  name: "parents"
 }]);
 
 /***/ }),
@@ -44145,7 +44153,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","G:\\\\xampp\\\\htdocs\\\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_home_vue":1,"resources_js_components_news_vue":1,"resources_js_components_schoolboy_vue":1,"resources_js_components_parents_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_home_vue":1,"resources_js_components_news_vue":1,"resources_js_components_schoolboy_vue":1,"resources_js_components_parents_vue":1,"resources_js_components_test_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

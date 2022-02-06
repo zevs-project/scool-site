@@ -23,9 +23,10 @@ export default {
                     route: "/news",
                     name: "Новини",
                 },
-                 {
+                {
                     route: "/schoolboy",
                     name: "Учням",
+                   
                 },
                 {
                     route: "/parents",

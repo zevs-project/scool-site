@@ -1,27 +1,34 @@
-const home = () =>import ( '../components/home.vue')
-const news = () =>import ( '../components/news.vue')
-const schoolboy = () =>import ( '../components/schoolboy.vue')
-const parents = () =>import ( '../components/parents.vue')
+const home = () => import("../components/home.vue");
+const news = () => import("../components/news.vue");
+const schoolboy = () => import("../components/schoolboy.vue");
+const parents = () => import("../components/parents.vue");
+const test = () => import("../components/test.vue");
 
 export default [
     {
-        path: '/',
+        path: "/",
         component: home,
-        name: 'home',
+        name: "home",
     },
     {
-        path: '/news',
+        path: "/news",
         component: news,
-        name: 'news',
+        name: "news",
     },
     {
-        path: '/schoolboy',
+        path: "/schoolboy",
         component: schoolboy,
-        name: 'schoolboy',
+        name: "schoolboy",
+        children: [
+            {
+                path: "test",
+                component: test,
+            },
+        ],
     },
     {
-        path: '/parents',
+        path: "/parents",
         component: parents,
-        name: 'parents',
+        name: "parents",
     },
-]
+];
