@@ -5334,6 +5334,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "navigation",
   data: function data() {
@@ -5341,12 +5343,20 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     getMenu: function getMenu() {
-      return this.$router.getRoutes();
+      var routes = this.$router.options.routes;
+      return routes;
     }
   },
-  mounted: function mounted() {
-    console.log(this.$router.getRoutes());
-    console.log(this.$router);
+  mounted: function mounted() {},
+  methods: {
+    mergePath: function mergePath() {
+      for (var _len = arguments.length, paths = new Array(_len), _key = 0; _key < _len; _key++) {
+        paths[_key] = arguments[_key];
+      }
+
+      var mergePath = paths.join("/");
+      return mergePath;
+    }
   }
 });
 
@@ -5515,8 +5525,9 @@ var test = function test() {
   name: "schoolboy",
   description: "Учням",
   children: [{
-    path: "test",
-    component: test
+    path: "timetable",
+    component: test,
+    description: 'Розклад уроків'
   }]
 }, {
   path: "/parents",
@@ -10595,7 +10606,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".navigation[data-v-5ce47ec2] {\n  display: flex;\n  justify-content: space-between;\n  padding: 20px 0;\n  max-width: 1200px;\n  width: 100%;\n  margin: 0 auto;\n}\n.navigation .logo[data-v-5ce47ec2] {\n  font-family: \"Pacifico\", cursive;\n  font-size: 1.5rem;\n  padding: 0 5px;\n}\n.navigation nav[data-v-5ce47ec2] {\n  display: flex;\n  align-items: center;\n  padding: 5px;\n}\n.navigation nav a[data-v-5ce47ec2] {\n  padding: 5px;\n  text-decoration: none;\n  font-size: 1.2rem;\n}\n.navigation nav a[data-v-5ce47ec2]:visited {\n  color: inherit;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".navigation[data-v-5ce47ec2] {\n  display: flex;\n  justify-content: space-between;\n  padding: 20px 0;\n  max-width: 1200px;\n  width: 100%;\n  margin: 0 auto;\n}\n.navigation .logo[data-v-5ce47ec2] {\n  font-family: \"Pacifico\", cursive;\n  font-size: 1.5rem;\n  padding: 0 5px;\n}\n.navigation nav[data-v-5ce47ec2] {\n  display: flex;\n  align-items: center;\n  padding: 5px;\n}\n.navigation nav .goto a[data-v-5ce47ec2] {\n  padding: 5px 10px;\n  text-decoration: none;\n  font-size: 1.2rem;\n  position: relative;\n}\n.navigation nav .goto a[data-v-5ce47ec2]:visited {\n  color: inherit;\n}\n.navigation nav .goto .submenu-wrapper[data-v-5ce47ec2] {\n  position: absolute;\n  border: 1px solid red;\n  opacity: 0;\n  transition: 0.5s 0s opacity ease-in;\n}\n.navigation nav .goto:hover > .submenu-wrapper[data-v-5ce47ec2] {\n  opacity: 1;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28705,21 +28716,27 @@ var render = function () {
           { key: id, staticClass: "goto" },
           [
             _c("router-link", { attrs: { to: menu.path } }, [
-              _vm._v(_vm._s(menu.name)),
+              _vm._v(_vm._s(menu.description)),
             ]),
             _vm._v(" "),
             menu.children
               ? _c(
                   "div",
-                  { staticClass: "show-submenu" },
+                  { staticClass: "submenu-wrapper" },
                   _vm._l(menu.children, function (submenu, submenuId) {
                     return _c(
                       "div",
                       { key: submenuId, staticClass: "submenu" },
                       [
-                        _c("router-link", { attrs: { to: submenu.path } }, [
-                          _vm._v(_vm._s(submenu.path)),
-                        ]),
+                        _c(
+                          "router-link",
+                          {
+                            attrs: {
+                              to: _vm.mergePath(menu.path, submenu.path),
+                            },
+                          },
+                          [_vm._v(_vm._s(submenu.description))]
+                        ),
                       ],
                       1
                     )

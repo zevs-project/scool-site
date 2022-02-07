@@ -3,16 +3,18 @@
         <div class="logo">Мотовилівська ЗОШ</div>
         <nav>
             <div class="goto" v-for="(menu, id) in getMenu" :key="id">
-                <router-link :to="menu.path">{{ menu.name }}</router-link>
+                <router-link :to="menu.path">{{
+                    menu.description
+                }}</router-link>
 
-                <div v-if="menu.children" class="show-submenu">
+                <div v-if="menu.children" class="submenu-wrapper">
                     <div
                         v-for="(submenu, submenuId) in menu.children"
                         :key="submenuId"
                         class="submenu"
                     >
-                        <router-link :to="submenu.path">{{
-                            submenu.path
+                        <router-link :to="mergePath(menu.path, submenu.path)">{{
+                            submenu.description
                         }}</router-link>
                     </div>
                 </div>
@@ -29,13 +31,16 @@ export default {
     },
     computed: {
         getMenu() {
-            
-            return this.$router.getRoutes();
+            const routes = this.$router.options.routes;
+            return routes;
         },
     },
-    mounted() {
-        console.log(this.$router.getRoutes());
-        console.log(this.$router);
+    mounted() {},
+    methods: {
+        mergePath(...paths) {
+            const mergePath = paths.join("/");
+            return mergePath;
+        },
     },
 };
 </script>
@@ -62,13 +67,27 @@ export default {
         align-items: center;
         padding: 5px;
 
-        a {
-            padding: 5px;
-            text-decoration: none;
-            font-size: 1.2rem;
+        .goto {
+            a {
+                padding: 5px 10px;
+                text-decoration: none;
+                font-size: 1.2rem;
+                position: relative;
 
-            &:visited {
-                color: inherit;
+                &:visited {
+                    color: inherit;
+                }
+            }
+
+            .submenu-wrapper {
+                position: absolute;
+                border: 1px solid red;
+                opacity: 0;
+                transition: 0.5s 0s opacity ease-in;
+            }
+
+            &:hover > .submenu-wrapper {
+                opacity: 1;
             }
         }
     }

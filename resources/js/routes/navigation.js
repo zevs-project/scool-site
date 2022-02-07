@@ -24,8 +24,9 @@ export default [
         description: "Учням",
         children: [
             {
-                path: "test",
+                path: "timetable",
                 component: test,
+                description: 'Розклад уроків'
             },
         ],
     },
