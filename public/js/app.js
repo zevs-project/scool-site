@@ -5322,24 +5322,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "navigation",
   data: function data() {
-    return {
-      menuList: [{
-        route: "/",
-        name: "Головна"
-      }, {
-        route: "/news",
-        name: "Новини"
-      }, {
-        route: "/schoolboy",
-        name: "Учням"
-      }, {
-        route: "/parents",
-        name: "Батькам"
-      }]
-    };
+    return {};
+  },
+  computed: {
+    getMenu: function getMenu() {
+      return this.$router.getRoutes();
+    }
+  },
+  mounted: function mounted() {
+    console.log(this.$router.getRoutes());
+    console.log(this.$router);
   }
 });
 
@@ -5495,15 +5502,18 @@ var test = function test() {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
   path: "/",
   component: home,
-  name: "home"
+  name: "home",
+  description: "Головна"
 }, {
   path: "/news",
   component: news,
-  name: "news"
+  name: "news",
+  description: "Новиини"
 }, {
   path: "/schoolboy",
   component: schoolboy,
   name: "schoolboy",
+  description: "Учням",
   children: [{
     path: "test",
     component: test
@@ -5511,7 +5521,8 @@ var test = function test() {
 }, {
   path: "/parents",
   component: parents,
-  name: "parents"
+  name: "parents",
+  description: "Батькам"
 }]);
 
 /***/ }),
@@ -28688,14 +28699,34 @@ var render = function () {
     _vm._v(" "),
     _c(
       "nav",
-      _vm._l(_vm.menuList, function (menu, id) {
+      _vm._l(_vm.getMenu, function (menu, id) {
         return _c(
           "div",
           { key: id, staticClass: "goto" },
           [
-            _c("router-link", { attrs: { to: menu.route } }, [
+            _c("router-link", { attrs: { to: menu.path } }, [
               _vm._v(_vm._s(menu.name)),
             ]),
+            _vm._v(" "),
+            menu.children
+              ? _c(
+                  "div",
+                  { staticClass: "show-submenu" },
+                  _vm._l(menu.children, function (submenu, submenuId) {
+                    return _c(
+                      "div",
+                      { key: submenuId, staticClass: "submenu" },
+                      [
+                        _c("router-link", { attrs: { to: submenu.path } }, [
+                          _vm._v(_vm._s(submenu.path)),
+                        ]),
+                      ],
+                      1
+                    )
+                  }),
+                  0
+                )
+              : _vm._e(),
           ],
           1
         )

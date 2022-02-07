@@ -2,8 +2,20 @@
     <div class="navigation">
         <div class="logo">Мотовилівська ЗОШ</div>
         <nav>
-            <div class="goto" v-for="(menu, id) in menuList" :key="id">
-                <router-link :to="menu.route">{{ menu.name }}</router-link>
+            <div class="goto" v-for="(menu, id) in getMenu" :key="id">
+                <router-link :to="menu.path">{{ menu.name }}</router-link>
+
+                <div v-if="menu.children" class="show-submenu">
+                    <div
+                        v-for="(submenu, submenuId) in menu.children"
+                        :key="submenuId"
+                        class="submenu"
+                    >
+                        <router-link :to="submenu.path">{{
+                            submenu.path
+                        }}</router-link>
+                    </div>
+                </div>
             </div>
         </nav>
     </div>
@@ -13,27 +25,17 @@
 export default {
     name: "navigation",
     data() {
-        return {
-            menuList: [
-                {
-                    route: "/",
-                    name: "Головна",
-                },
-                {
-                    route: "/news",
-                    name: "Новини",
-                },
-                {
-                    route: "/schoolboy",
-                    name: "Учням",
-                   
-                },
-                {
-                    route: "/parents",
-                    name: "Батькам",
-                },
-            ],
-        };
+        return {};
+    },
+    computed: {
+        getMenu() {
+            
+            return this.$router.getRoutes();
+        },
+    },
+    mounted() {
+        console.log(this.$router.getRoutes());
+        console.log(this.$router);
     },
 };
 </script>

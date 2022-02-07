@@ -9,16 +9,19 @@ export default [
         path: "/",
         component: home,
         name: "home",
+        description: "Головна",
     },
     {
         path: "/news",
         component: news,
         name: "news",
+        description: "Новиини",
     },
     {
         path: "/schoolboy",
         component: schoolboy,
         name: "schoolboy",
+        description: "Учням",
         children: [
             {
                 path: "test",
@@ -30,5 +33,6 @@ export default [
         path: "/parents",
         component: parents,
         name: "parents",
+        description: "Батькам"
     },
 ];
