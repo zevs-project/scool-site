@@ -1,22 +1,26 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">schoolboy</div>
-
-                   
-                </div>
-            </div>
-        </div>
+    <div class="schoolboy-wrapper">
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-    export default {
-        name: 'schoolboy',
-        mounted() {
-            console.log('Component mounted.')
-        }
-    }
+export default {
+    name: "schoolboy",
+    mounted() {
+        console.log("Component mounted.");
+    },
+};
 </script>
+<style lang="scss" scoped>
+@import "../../sass/_variables";
+
+.schoolboy-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    max-width: $maxWidth;
+    width: 100%;
+    margin: 0 auto;
+}
+</style>

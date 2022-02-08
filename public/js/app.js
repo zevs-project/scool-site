@@ -5505,8 +5505,8 @@ var parents = function parents() {
   return __webpack_require__.e(/*! import() */ "resources_js_components_parents_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/parents.vue */ "./resources/js/components/parents.vue"));
 };
 
-var test = function test() {
-  return __webpack_require__.e(/*! import() */ "resources_js_components_test_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/test.vue */ "./resources/js/components/test.vue"));
+var timetable = function timetable() {
+  return __webpack_require__.e(/*! import() */ "resources_js_components_timetable_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/timetable.vue */ "./resources/js/components/timetable.vue"));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
@@ -5526,7 +5526,7 @@ var test = function test() {
   description: "Учням",
   children: [{
     path: "timetable",
-    component: test,
+    component: timetable,
     description: 'Розклад уроків'
   }]
 }, {
@@ -10582,7 +10582,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".footer-wrapper[data-v-b0b85b86] {\n  width: 100%;\n  background: #000;\n}\n.footer-wrapper footer[data-v-b0b85b86] {\n  width: 100%;\n  max-width: 1200px;\n  padding: 10px 0;\n  color: #fff;\n  font-size: 0.8rem;\n  display: flex;\n  justify-content: space-around;\n  margin: 0 auto;\n}\n.footer-wrapper footer .footer-column[data-v-b0b85b86] {\n  display: flex;\n  flex-direction: column;\n  flex-grow: 1;\n  flex-basis: 40%;\n  align-items: center;\n}\n.footer-wrapper footer .footer-column[data-v-b0b85b86]:first-of-type {\n  flex-basis: 20%;\n  align-self: center;\n}\n.footer-wrapper footer .footer-column .logo[data-v-b0b85b86] {\n  font-family: \"Pacifico\", cursive;\n  font-size: 1rem;\n  text-align: center;\n  align-self: center;\n}\n.footer-wrapper footer .footer-column .footer-column-title[data-v-b0b85b86] {\n  padding: 10px 0;\n  font-size: 0.9rem;\n  font-weight: 700;\n}\n.footer-wrapper footer .footer-column .social-wrapper .fab[data-v-b0b85b86] {\n  padding: 5px;\n  font-size: 1.1rem;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".footer-wrapper[data-v-b0b85b86] {\n  width: 100%;\n  background: #000;\n}\n.footer-wrapper footer[data-v-b0b85b86] {\n  width: 100%;\n  max-width: 1200px;\n  padding: 10px 0;\n  color: #fff;\n  font-size: 0.8rem;\n  display: flex;\n  justify-content: space-around;\n  margin: 0 auto;\n}\n.footer-wrapper footer .footer-column[data-v-b0b85b86] {\n  flex-grow: 1;\n  flex-basis: 40%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.footer-wrapper footer .footer-column[data-v-b0b85b86]:first-of-type {\n  flex-basis: 20%;\n  align-self: center;\n}\n.footer-wrapper footer .footer-column .logo[data-v-b0b85b86] {\n  font-family: \"Pacifico\", cursive;\n  font-size: 1rem;\n  text-align: center;\n  align-self: center;\n}\n.footer-wrapper footer .footer-column .footer-column-title[data-v-b0b85b86] {\n  padding: 10px 0;\n  font-size: 0.9rem;\n  font-weight: 700;\n}\n.footer-wrapper footer .footer-column .social-wrapper .fab[data-v-b0b85b86] {\n  padding: 5px;\n  font-size: 1.1rem;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -44201,7 +44201,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","G:\\\\xampp\\\\htdocs\\\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_home_vue":1,"resources_js_components_news_vue":1,"resources_js_components_schoolboy_vue":1,"resources_js_components_parents_vue":1,"resources_js_components_test_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_home_vue":1,"resources_js_components_news_vue":1,"resources_js_components_schoolboy_vue":1,"resources_js_components_parents_vue":1,"resources_js_components_timetable_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

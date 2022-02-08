@@ -2,7 +2,7 @@ const home = () => import("../components/home.vue");
 const news = () => import("../components/news.vue");
 const schoolboy = () => import("../components/schoolboy.vue");
 const parents = () => import("../components/parents.vue");
-const test = () => import("../components/test.vue");
+const timetable = () => import("../components/timetable.vue");
 
 export default [
     {
@@ -25,7 +25,7 @@ export default [
         children: [
             {
                 path: "timetable",
-                component: test,
+                component: timetable,
                 description: 'Розклад уроків'
             },
         ],

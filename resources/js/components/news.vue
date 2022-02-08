@@ -98,15 +98,14 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../../sass/_mixins";
 @import "../../sass/_variables";
 
 .news {
     width: 100%;
     padding: 30px 15px;
     margin: 30px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexColumn;
 
     .news-wrapper {
         display: flex;
@@ -144,7 +143,7 @@ export default {
 
                 .news-title {
                     text-align: center;
-                    font-size: 1.2rem;
+                    font-size: $titleFontSize;
                 }
 
                 .news-short {

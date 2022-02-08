@@ -37,6 +37,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../sass/_mixins";
 @import "../../sass/_variables";
 
 .footer-wrapper {
@@ -54,11 +55,10 @@ export default {
         margin: 0 auto;
 
         .footer-column {
-            display: flex;
-            flex-direction: column;
             flex-grow: 1;
             flex-basis: 40%;
-            align-items: center;
+            @include flexColumn;
+
 
             &:first-of-type {
                 flex-basis: 20%;

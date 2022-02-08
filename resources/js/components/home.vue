@@ -176,6 +176,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../sass/_mixins";
 @import "../../sass/_variables";
 @import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
@@ -240,12 +241,11 @@ export default {
         width: 100%;
         padding: 30px 15px;
         margin: 30px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
+        @include flexColumn;
 
         .home-content-title {
-            font-size: 2rem;
+            font-size: $titleFontSize;
             font-weight: bold;
         }
 
@@ -311,11 +311,8 @@ export default {
         }
 
         &.address {
-            display: flex;
             flex-direction: row;
-            align-items: center;
             justify-content: center;
-            width: 100%;
 
             .map-wrapper {
                 padding: 5px;
