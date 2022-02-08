@@ -96,10 +96,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../sass/_mixins";
 @import "../../sass/_variables";
 
 .timetable-wrapper {
+    width: 100%;
+    @include flexColumn;
+
     .timetable-block {
+        @include flexColumn;
+        padding: 25px 10px;
         .title {
             font-size: $titleFontSize;
         }

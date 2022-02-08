@@ -13,11 +13,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "../../sass/_mixins";
 @import "../../sass/_variables";
 
 .schoolboy-wrapper {
-    display: flex;
-    justify-content: space-between;
+    @include flexColumn;
     padding: 20px 0;
     max-width: $maxWidth;
     width: 100%;
