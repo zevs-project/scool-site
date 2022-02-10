@@ -96,6 +96,57 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "parents",
@@ -126,7 +177,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".timetable-wrapper[data-v-edaaba34] {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.timetable-wrapper .timetable-block[data-v-edaaba34] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 25px 10px;\n}\n.timetable-wrapper .timetable-block .title[data-v-edaaba34] {\n  font-size: 2rem;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".timetable-wrapper[data-v-edaaba34] {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.timetable-wrapper .timetable-block[data-v-edaaba34] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 25px 10px;\n  width: 100%;\n}\n.timetable-wrapper .timetable-block .title[data-v-edaaba34] {\n  font-size: 2rem;\n}\n.timetable-wrapper .table-section table.daytable-time[data-v-edaaba34] {\n  border-collapse: collapse;\n  font-size: 1.2rem;\n  text-align: center;\n  width: 80%;\n}\n.timetable-wrapper .table-section table.daytable-time td[data-v-edaaba34] {\n  padding-top: 10px;\n  padding-bottom: 10px;\n}\n.timetable-wrapper .table-section table.daytable-time thead tr[data-v-edaaba34]:first-of-type {\n  background: #4ff7c8;\n}\n.timetable-wrapper .table-section table.daytable-time tbody tr td[data-v-edaaba34] {\n  border-top: 3px solid #fff;\n  border-bottom: 3px solid #fff;\n}\n.timetable-wrapper .table-section table.daytable-time tbody tr[data-v-edaaba34]:nth-of-type(odd) {\n  background: #dfdecc;\n}\n.timetable-wrapper .table-section table.daytable-time tbody tr[data-v-edaaba34]:nth-of-type(even) {\n  background: #a2e1ef;\n}\n.timetable-wrapper .table-section table.daytable-time tbody tr.current[data-v-edaaba34] {\n  background: #00a1ff;\n}\n.timetable-wrapper .sort-section .lesson-wrapper[data-v-edaaba34] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  width: 100%;\n}\n.timetable-wrapper .sort-section .lesson-wrapper .lesson-wrapper-header[data-v-edaaba34] {\n  display: flex;\n}\n.timetable-wrapper .sort-section .lesson-wrapper .lesson-section[data-v-edaaba34] {\n  display: flex;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -285,6 +336,8 @@ var render = function () {
         ],
         1
       ),
+      _vm._v(" "),
+      _vm._m(1),
     ]),
   ])
 }
@@ -370,7 +423,7 @@ var staticRenderFns = [
             _c("td", [_vm._v("10")]),
           ]),
           _vm._v(" "),
-          _c("tr", [
+          _c("tr", { staticClass: "current" }, [
             _c("td", [_vm._v("7")]),
             _vm._v(" "),
             _c("td", [_vm._v("13.25")]),
@@ -389,6 +442,110 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("td"),
           ]),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "lesson-wrapper" }, [
+      _c("div", { staticClass: "lesson-wrapper-header" }, [
+        _c("div", { staticClass: "lesson-time-title" }, [
+          _vm._v("Початок уроку, час"),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "lesson-name-title" }, [
+          _vm._v("Назва уроку"),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "lesson-teacher-title" }, [_vm._v("Вчитель")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "lesson-date-title" }, [_vm._v("Дата")]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "lesson-section" }, [
+        _c("div", { staticClass: "lesson-start-time" }, [_vm._v("8.30")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "lesson-name" }, [_vm._v("Математика")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "teacher-name" }, [_vm._v("Іванов І.І.")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "current-date" }, [
+          _vm._v("20 лютого 2022 р."),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "lesson-section" }, [
+        _c("div", { staticClass: "lesson-start-time" }, [_vm._v("8.30")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "lesson-name" }, [_vm._v("Математика")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "teacher-name" }, [_vm._v("Іванов І.І.")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "current-date" }, [
+          _vm._v("20 лютого 2022 р."),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "lesson-section" }, [
+        _c("div", { staticClass: "lesson-start-time" }, [_vm._v("8.30")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "lesson-name" }, [_vm._v("Математика")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "teacher-name" }, [_vm._v("Іванов І.І.")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "current-date" }, [
+          _vm._v("20 лютого 2022 р."),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "lesson-section" }, [
+        _c("div", { staticClass: "lesson-start-time" }, [_vm._v("8.30")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "lesson-name" }, [_vm._v("Математика")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "teacher-name" }, [_vm._v("Іванов І.І.")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "current-date" }, [
+          _vm._v("20 лютого 2022 р."),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "lesson-section" }, [
+        _c("div", { staticClass: "lesson-start-time" }, [_vm._v("8.30")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "lesson-name" }, [_vm._v("Математика")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "teacher-name" }, [_vm._v("Іванов І.І.")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "current-date" }, [
+          _vm._v("20 лютого 2022 р."),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "lesson-section" }, [
+        _c("div", { staticClass: "lesson-start-time" }, [_vm._v("8.30")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "lesson-name" }, [_vm._v("Математика")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "teacher-name" }, [_vm._v("Іванов І.І.")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "current-date" }, [
+          _vm._v("20 лютого 2022 р."),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "lesson-section" }, [
+        _c("div", { staticClass: "lesson-start-time" }, [_vm._v("8.30")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "lesson-name" }, [_vm._v("Математика")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "teacher-name" }, [_vm._v("Іванов І.І.")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "current-date" }, [
+          _vm._v("20 лютого 2022 р."),
         ]),
       ]),
     ])

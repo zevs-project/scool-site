@@ -50,7 +50,7 @@
                         <td>13.15</td>
                         <td>10</td>
                     </tr>
-                    <tr>
+                    <tr class="current">
                         <td>7</td>
                         <td>13.25</td>
                         <td>14.10</td>
@@ -76,6 +76,57 @@
                 />
 
                 <v-select></v-select>
+            </div>
+
+            <div class="lesson-wrapper">
+                <div class="lesson-wrapper-header">
+                    <div class="lesson-time-title">Початок уроку, час</div>
+                    <div class="lesson-name-title">Назва уроку</div>
+                    <div class="lesson-teacher-title">Вчитель</div>
+                    <div class="lesson-date-title">Дата</div>
+                </div>
+                <div class="lesson-section">
+                    <div class="lesson-start-time">8.30</div>
+                    <div class="lesson-name">Математика</div>
+                    <div class="teacher-name">Іванов І.І.</div>
+                    <div class="current-date">20 лютого 2022 р.</div>
+                </div>
+                <div class="lesson-section">
+                    <div class="lesson-start-time">8.30</div>
+                    <div class="lesson-name">Математика</div>
+                    <div class="teacher-name">Іванов І.І.</div>
+                    <div class="current-date">20 лютого 2022 р.</div>
+                </div>
+                <div class="lesson-section">
+                    <div class="lesson-start-time">8.30</div>
+                    <div class="lesson-name">Математика</div>
+                    <div class="teacher-name">Іванов І.І.</div>
+                    <div class="current-date">20 лютого 2022 р.</div>
+                </div>
+                <div class="lesson-section">
+                    <div class="lesson-start-time">8.30</div>
+                    <div class="lesson-name">Математика</div>
+                    <div class="teacher-name">Іванов І.І.</div>
+                    <div class="current-date">20 лютого 2022 р.</div>
+                </div>
+                <div class="lesson-section">
+                    <div class="lesson-start-time">8.30</div>
+                    <div class="lesson-name">Математика</div>
+                    <div class="teacher-name">Іванов І.І.</div>
+                    <div class="current-date">20 лютого 2022 р.</div>
+                </div>
+                <div class="lesson-section">
+                    <div class="lesson-start-time">8.30</div>
+                    <div class="lesson-name">Математика</div>
+                    <div class="teacher-name">Іванов І.І.</div>
+                    <div class="current-date">20 лютого 2022 р.</div>
+                </div>
+                <div class="lesson-section">
+                    <div class="lesson-start-time">8.30</div>
+                    <div class="lesson-name">Математика</div>
+                    <div class="teacher-name">Іванов І.І.</div>
+                    <div class="current-date">20 лютого 2022 р.</div>
+                </div>
             </div>
         </div>
     </div>
@@ -106,15 +157,73 @@ export default {
     .timetable-block {
         @include flexColumn;
         padding: 25px 10px;
+        width: 100%;
         .title {
             font-size: $titleFontSize;
         }
     }
 
     .table-section {
+        table.daytable-time {
+            border-collapse: collapse;
+            font-size: 1.2rem;
+            text-align: center;
+            width: 80%;
+
+            td {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            thead {
+                tr:first-of-type {
+                    background: #4ff7c8;
+                }
+            }
+
+            tbody {
+
+                tr {
+                    td {
+                        border-top: 3px solid #fff;
+                        border-bottom: 3px solid #fff;
+                    }
+                }
+                tr:nth-of-type(odd) {
+                    background: #dfdecc;
+                }
+
+                tr:nth-of-type(even) {
+                    background: #a2e1ef;
+                }
+
+                tr.current {
+                    background: #00a1ff;
+                }
+            }
+        }
     }
 
     .sort-section {
+
+        .timetable-sort-section {
+
+        }
+
+        .lesson-wrapper {
+            @include flexColumn;
+            width: 100%;
+
+            .lesson-wrapper-header {
+                display: flex;
+            }
+
+            .lesson-section {
+                display: flex;
+            }
+        }
+
+
     }
 }
 </style>
