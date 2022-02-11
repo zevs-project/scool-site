@@ -79,53 +79,53 @@
             </div>
 
             <div class="lesson-wrapper">
-                <div class="lesson-wrapper-header">
-                    <div class="lesson-time-title">Початок уроку, час</div>
-                    <div class="lesson-name-title">Назва уроку</div>
-                    <div class="lesson-teacher-title">Вчитель</div>
-                    <div class="lesson-date-title">Дата</div>
+                <div class="lesson-wrapper-header lesson-section">
+                    <div class="lesson-time-title lesson-start-time cell col-1">Початок уроку, час</div>
+                    <div class="lesson-name-title lesson-name cell col-2">Назва уроку</div>
+                    <div class="lesson-teacher-title teacher-name cell col-3">Вчитель</div>
+                    <div class="lesson-date-title current-date cell col-4">Дата</div>
                 </div>
                 <div class="lesson-section">
-                    <div class="lesson-start-time">8.30</div>
-                    <div class="lesson-name">Математика</div>
-                    <div class="teacher-name">Іванов І.І.</div>
-                    <div class="current-date">20 лютого 2022 р.</div>
+                    <div class="lesson-start-time cell col-1">8.30</div>
+                    <div class="lesson-name cell col-2">Математика</div>
+                    <div class="teacher-name cell col-3">Іванов І.І.</div>
+                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
                 </div>
                 <div class="lesson-section">
-                    <div class="lesson-start-time">8.30</div>
-                    <div class="lesson-name">Математика</div>
-                    <div class="teacher-name">Іванов І.І.</div>
-                    <div class="current-date">20 лютого 2022 р.</div>
+                    <div class="lesson-start-time cell col-1">8.30</div>
+                    <div class="lesson-name cell col-2">Математика</div>
+                    <div class="teacher-name cell col-3">Іванов І.І.</div>
+                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
                 </div>
                 <div class="lesson-section">
-                    <div class="lesson-start-time">8.30</div>
-                    <div class="lesson-name">Математика</div>
-                    <div class="teacher-name">Іванов І.І.</div>
-                    <div class="current-date">20 лютого 2022 р.</div>
+                    <div class="lesson-start-time cell col-1">8.30</div>
+                    <div class="lesson-name cell col-2">Математика</div>
+                    <div class="teacher-name cell col-3">Іванов І.І.</div>
+                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
                 </div>
                 <div class="lesson-section">
-                    <div class="lesson-start-time">8.30</div>
-                    <div class="lesson-name">Математика</div>
-                    <div class="teacher-name">Іванов І.І.</div>
-                    <div class="current-date">20 лютого 2022 р.</div>
+                    <div class="lesson-start-time cell col-1">8.30</div>
+                    <div class="lesson-name cell col-2">Математика</div>
+                    <div class="teacher-name cell col-3">Іванов І.І.</div>
+                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
                 </div>
                 <div class="lesson-section">
-                    <div class="lesson-start-time">8.30</div>
-                    <div class="lesson-name">Математика</div>
-                    <div class="teacher-name">Іванов І.І.</div>
-                    <div class="current-date">20 лютого 2022 р.</div>
+                    <div class="lesson-start-time cell col-1">8.30</div>
+                    <div class="lesson-name cell col-2">Математика</div>
+                    <div class="teacher-name cell col-3">Іванов І.І.</div>
+                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
                 </div>
                 <div class="lesson-section">
-                    <div class="lesson-start-time">8.30</div>
-                    <div class="lesson-name">Математика</div>
-                    <div class="teacher-name">Іванов І.І.</div>
-                    <div class="current-date">20 лютого 2022 р.</div>
+                    <div class="lesson-start-time cell col-1">8.30</div>
+                    <div class="lesson-name cell col-2">Математика</div>
+                    <div class="teacher-name cell col-3">Іванов І.І.</div>
+                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
                 </div>
                 <div class="lesson-section">
-                    <div class="lesson-start-time">8.30</div>
-                    <div class="lesson-name">Математика</div>
-                    <div class="teacher-name">Іванов І.І.</div>
-                    <div class="current-date">20 лютого 2022 р.</div>
+                    <div class="lesson-start-time cell col-1">8.30</div>
+                    <div class="lesson-name cell col-2">Математика</div>
+                    <div class="teacher-name cell col-3">Іванов І.І.</div>
+                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
                 </div>
             </div>
         </div>
@@ -212,14 +212,33 @@ export default {
 
         .lesson-wrapper {
             @include flexColumn;
-            width: 100%;
+            width: 80%;
+            text-align: center;
+            font-size: 1.2rem;
+
+            .cell {
+                padding: 0 5px 15px 5px;
+            }
+            
+
+            .col-1,
+            .col-4 {
+                flex-basis: 20%;
+            }
+
+            .col-2,
+            .col-3 {
+                flex-basis: 30%;
+            }
 
             .lesson-wrapper-header {
-                display: flex;
+               
             }
 
             .lesson-section {
                 display: flex;
+                width: 100%;
+                justify-content: space-around;
             }
         }
 
