@@ -72,60 +72,115 @@
                 <input
                     type="checkbox"
                     value="Показать всі класи"
-                    class="sorted-input"
+                    class="sorted-input sorted-element"
                 />
 
-                <v-select></v-select>
+                <v-select
+                    class="sorted-select sorted-element"
+                    :value="selectedValue"
+                    v-bind="selectOption"
+                ></v-select>
+                <button class="submit-filter sorted-element">
+                    Застосувати фільтри
+                </button>
             </div>
 
             <div class="lesson-wrapper">
                 <div class="lesson-wrapper-header lesson-section">
-                    <div class="lesson-time-title lesson-start-time cell col-1">Початок уроку, час</div>
-                    <div class="lesson-name-title lesson-name cell col-2">Назва уроку</div>
-                    <div class="lesson-teacher-title teacher-name cell col-3">Вчитель</div>
-                    <div class="lesson-date-title current-date cell col-4">Дата</div>
+                    <div class="lesson-time-title lesson-start-time cell col-1">
+                        Початок уроку, час
+                    </div>
+                    <div class="lesson-name-title lesson-name cell col-2">
+                        Назва уроку
+                    </div>
+                    <div class="lesson-teacher-title teacher-name cell col-3">
+                        Вчитель
+                    </div>
+                    <div
+                        class="lesson-classname-title current-class cell col-4"
+                    >
+                        Клас
+                    </div>
+                    <div class="lesson-date-title current-date cell col-5">
+                        Дата
+                    </div>
                 </div>
                 <div class="lesson-section">
                     <div class="lesson-start-time cell col-1">8.30</div>
                     <div class="lesson-name cell col-2">Математика</div>
                     <div class="teacher-name cell col-3">Іванов І.І.</div>
-                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
+                    <div class="current-class cell col-4">
+                        1 класс<i class="far fa-bell"></i>
+                    </div>
+                    <div class="current-date cell col-5">
+                        20 лютого 2022 р.<i class="far fa-bell"></i>
+                    </div>
                 </div>
                 <div class="lesson-section">
                     <div class="lesson-start-time cell col-1">8.30</div>
                     <div class="lesson-name cell col-2">Математика</div>
                     <div class="teacher-name cell col-3">Іванов І.І.</div>
-                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
+                    <div class="current-class cell col-4">
+                        1 класс<i class="far fa-bell"></i>
+                    </div>
+                    <div class="current-date cell col-5">
+                        20 лютого 2022 р.<i class="far fa-bell"></i>
+                    </div>
                 </div>
                 <div class="lesson-section">
                     <div class="lesson-start-time cell col-1">8.30</div>
                     <div class="lesson-name cell col-2">Математика</div>
                     <div class="teacher-name cell col-3">Іванов І.І.</div>
-                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
+                    <div class="current-class cell col-4">
+                        1 класс<i class="far fa-bell"></i>
+                    </div>
+                    <div class="current-date cell col-5">
+                        20 лютого 2022 р.<i class="far fa-bell"></i>
+                    </div>
                 </div>
                 <div class="lesson-section">
                     <div class="lesson-start-time cell col-1">8.30</div>
                     <div class="lesson-name cell col-2">Математика</div>
                     <div class="teacher-name cell col-3">Іванов І.І.</div>
-                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
+                    <div class="current-class cell col-4">
+                        1 класс<i class="far fa-bell"></i>
+                    </div>
+                    <div class="current-date cell col-5">
+                        20 лютого 2022 р.<i class="far fa-bell"></i>
+                    </div>
                 </div>
                 <div class="lesson-section">
                     <div class="lesson-start-time cell col-1">8.30</div>
                     <div class="lesson-name cell col-2">Математика</div>
                     <div class="teacher-name cell col-3">Іванов І.І.</div>
-                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
+                    <div class="current-class cell col-4">
+                        1 класс<i class="far fa-bell"></i>
+                    </div>
+                    <div class="current-date cell col-5">
+                        20 лютого 2022 р.<i class="far fa-bell"></i>
+                    </div>
                 </div>
                 <div class="lesson-section">
                     <div class="lesson-start-time cell col-1">8.30</div>
                     <div class="lesson-name cell col-2">Математика</div>
                     <div class="teacher-name cell col-3">Іванов І.І.</div>
-                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
+                    <div class="current-class cell col-4">
+                        1 класс<i class="far fa-bell"></i>
+                    </div>
+                    <div class="current-date cell col-5">
+                        20 лютого 2022 р.<i class="far fa-bell"></i>
+                    </div>
                 </div>
                 <div class="lesson-section">
                     <div class="lesson-start-time cell col-1">8.30</div>
                     <div class="lesson-name cell col-2">Математика</div>
                     <div class="teacher-name cell col-3">Іванов І.І.</div>
-                    <div class="current-date cell col-4">20 лютого 2022 р.<i class="far fa-bell"></i></div>
+                    <div class="current-class cell col-4">
+                        1 класс<i class="far fa-bell"></i>
+                    </div>
+                    <div class="current-date cell col-5">
+                        20 лютого 2022 р.<i class="far fa-bell"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -140,9 +195,32 @@ export default {
     components: {
         "v-select": vSelect,
     },
-    mounted() {
-        console.log("Component mounted.");
+    data() {
+        return {
+            selectedValue: '',
+            selectOption: {
+                options: [
+                    {
+                        label: "День",
+                        code: "day",
+                    },
+                    {
+                        label: "Тиждень",
+                        code: "week",
+                    },
+                    {
+                        label: "Місяць",
+                        code: "mouth",
+                    },
+                ],
+                placeholder: "",
+                appendToBody: false,
+                inputId: "select-type-filter",
+                clearable: true,
+            },
+        };
     },
+    mounted() {},
 };
 </script>
 
@@ -182,7 +260,6 @@ export default {
             }
 
             tbody {
-
                 tr {
                     td {
                         border-top: 3px solid #fff;
@@ -205,9 +282,30 @@ export default {
     }
 
     .sort-section {
-
         .timetable-sort-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 15px 0;
 
+            .sorted-element {
+                margin-right: 20px;
+                height: 25px;
+                border-radius: 10%;
+            }
+
+            .sorted-input {
+                height: 20px;
+                width: 250px;
+            }
+
+            .sorted-select {
+                border: 1px solid red;
+
+                ::v-deep .vs__dropdown-toggle {
+                    display: flex;
+                }
+            }
         }
 
         .lesson-wrapper {
@@ -219,20 +317,22 @@ export default {
             .cell {
                 padding: 0 5px 15px 5px;
             }
-            
 
             .col-1,
             .col-4 {
-                flex-basis: 20%;
+                flex-basis: 15%;
             }
 
             .col-2,
             .col-3 {
+                flex-basis: 20%;
+            }
+
+            .col-5 {
                 flex-basis: 30%;
             }
 
             .lesson-wrapper-header {
-               
             }
 
             .lesson-section {
@@ -241,8 +341,6 @@ export default {
                 justify-content: space-around;
             }
         }
-
-
     }
 }
 </style>
