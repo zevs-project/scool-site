@@ -241,6 +241,7 @@ export default {
         width: 100%;
         padding: 30px 15px;
         margin: 30px 0;
+        box-shadow: 0px -3px 5px rgb(0 0 0 / 20%);ґ
 
         @include flexColumn;
 

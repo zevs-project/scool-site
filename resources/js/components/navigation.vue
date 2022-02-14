@@ -52,9 +52,13 @@ export default {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-    max-width: $maxWidth;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+    margin-bottom: 15px;
 
     .logo {
         font-family: $fontPacifico;

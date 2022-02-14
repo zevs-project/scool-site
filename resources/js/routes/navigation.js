@@ -15,7 +15,7 @@ export default [
         path: "/news",
         component: news,
         name: "news",
-        description: "Новиини",
+        description: "Новини",
     },
     {
         path: "/schoolboy",
