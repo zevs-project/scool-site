@@ -85,7 +85,6 @@ export default {
 
             .submenu-wrapper {
                 position: absolute;
-                border: 1px solid red;
                 opacity: 0;
                 transition: 0.5s 0s opacity ease-in;
             }
