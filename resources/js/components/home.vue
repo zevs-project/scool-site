@@ -261,7 +261,7 @@ export default {
             .news-wrapper {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: flex-start;
+                justify-content: center;
                 width: 70%;
                 padding: 20px 0 0 0;
 
@@ -269,7 +269,8 @@ export default {
                     text-decoration: none;
                     display: flex;
                     flex-direction: column;
-                    flex-basis: 25%;
+                    flex-basis: 32%;
+                    min-width: 250px;
                     padding: 20px 10px;
                     color: inherit;
 

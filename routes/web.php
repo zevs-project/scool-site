@@ -17,8 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 }); */
 
-Route::get('/{any?}', [
+/* Route::get('/{any?}', [
     function () {
         return view('welcome');
     }
-])->where('any', '.*');
+])->where('any', '.*'); */
+
+Route::get('/', [
+    function () {
+        return view('welcome');
+    }
+]);

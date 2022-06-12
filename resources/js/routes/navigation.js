@@ -1,8 +1,8 @@
 const home = () => import("../components/home.vue");
 const news = () => import("../components/news.vue");
 const schoolboy = () => import("../components/schoolboy.vue");
-const parents = () => import("../components/parents.vue");
 const timetable = () => import("../components/timetable.vue");
+const articlesForSchoolchildren = () => import("../components/articlesForSchoolchildren.vue");
 
 export default [
     {
@@ -22,18 +22,20 @@ export default [
         component: schoolboy,
         name: "schoolboy",
         description: "Учням",
+        redirect: {name: 'timetable'},
         children: [
             {
                 path: "timetable",
                 component: timetable,
-                description: 'Розклад уроків'
+                description: 'Розклад уроків',
+                name: 'timetable'
+            },
+            {
+                path: "articlesForSchoolchildren",
+                component: articlesForSchoolchildren,
+                description: 'Цікаві статті',
+                name: 'articlesForSchoolchildren'
             },
         ],
-    },
-    {
-        path: "/parents",
-        component: parents,
-        name: "parents",
-        description: "Батькам"
     },
 ];

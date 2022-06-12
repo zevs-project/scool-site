@@ -81,7 +81,7 @@
                     v-bind="selectOption"
                 ></v-select>
                 <button class="submit-filter sorted-element">
-                    Застосувати фільтри
+                    Застосувати
                 </button>
             </div>
 
@@ -213,7 +213,7 @@ export default {
                         code: "mouth",
                     },
                 ],
-                placeholder: "",
+                placeholder: "Вкажіть фільтр",
                 appendToBody: false,
                 inputId: "select-type-filter",
                 clearable: true,
@@ -289,21 +289,27 @@ export default {
             padding: 15px 0;
 
             .sorted-element {
-                margin-right: 20px;
-                height: 25px;
-                border-radius: 10%;
+                margin-right: 15px;
+                border-radius: 10px;
+                padding: 0.2rem 1rem;
             }
 
             .sorted-input {
                 height: 20px;
-                width: 250px;
+                flex-basis: 10%;
             }
 
             .sorted-select {
-                border: 1px solid red;
-
                 ::v-deep .vs__dropdown-toggle {
                     display: flex;
+                }
+
+                ::v-deep .vs__selected-options {
+                    margin-right: 5px;
+                }
+
+                ::v-deep .vs__actions {
+                    display: none;
                 }
             }
         }
