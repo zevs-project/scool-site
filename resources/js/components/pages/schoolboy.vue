@@ -13,8 +13,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "../../sass/_mixins";
-@import "../../sass/_variables";
+@import "../../../sass/_mixins";
+@import "../../../sass/_variables";
 
 .schoolboy-wrapper {
     @include flexColumn;

@@ -73,10 +73,10 @@
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
-import image1 from "../../../public/images/image1.jpg";
-import image2 from "../../../public/images/image2.jpg";
-import image3 from "../../../public/images/image3.jpg";
-import articleShort from '../components/articles/article-short.vue';
+import image1 from "../../../../public/images/image1.jpg";
+import image2 from "../../../../public/images/image2.jpg";
+import image3 from "../../../../public/images/image3.jpg";
+import articleShort from '../articles/article-short.vue';
 
 export default {
     name: "home",
@@ -95,26 +95,31 @@ export default {
                     thumb: image1,
                     title: "Title 1",
                     content: "Text article 1",
+                    link: '',
                 },
                 {
                     thumb: image2,
                     title: "Title 1",
                     content: "Text article 1",
+                    link: '',
                 },
                 {
                     thumb: image3,
                     title: "Title 1",
                     content: "Text article 1",
+                    link: '',
                 },
                 {
                     thumb: image1,
                     title: "Title 1",
                     content: "Text article 1",
+                    link: '',
                 },
                 {
                     thumb: image2,
                     title: "Title 1",
                     content: "Text article 1",
+                    link: '',
                 }
             ],
             carouselConfig1: {
@@ -134,9 +139,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../sass/_mixins";
-@import "../../sass/_variables";
-@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../../../sass/_mixins";
+@import "../../../sass/_variables";
+@import "../../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 .home-wrapper {
     width: 100%;

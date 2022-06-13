@@ -42,6 +42,10 @@ __webpack_require__.r(__webpack_exports__);
     content: {
       type: String,
       "default": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+    link: {
+      type: String,
+      "default": ''
     }
   },
   data: function data() {
@@ -167,23 +171,28 @@ __webpack_require__.r(__webpack_exports__);
       articles: [{
         thumb: _public_images_image1_jpg__WEBPACK_IMPORTED_MODULE_1__["default"],
         title: "Title 1",
-        content: "Text article 1"
+        content: "Text article 1",
+        link: ''
       }, {
         thumb: _public_images_image2_jpg__WEBPACK_IMPORTED_MODULE_2__["default"],
         title: "Title 1",
-        content: "Text article 1"
+        content: "Text article 1",
+        link: ''
       }, {
         thumb: _public_images_image3_jpg__WEBPACK_IMPORTED_MODULE_3__["default"],
         title: "Title 1",
-        content: "Text article 1"
+        content: "Text article 1",
+        link: ''
       }, {
         thumb: _public_images_image1_jpg__WEBPACK_IMPORTED_MODULE_1__["default"],
         title: "Title 1",
-        content: "Text article 1"
+        content: "Text article 1",
+        link: ''
       }, {
         thumb: _public_images_image2_jpg__WEBPACK_IMPORTED_MODULE_2__["default"],
         title: "Title 1",
-        content: "Text article 1"
+        content: "Text article 1",
+        link: ''
       }],
       carouselConfig1: {
         centerMode: true,
@@ -297,7 +306,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 ___CSS_LOADER_EXPORT___.i(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_node_modules_fortawesome_fontawesome_free_css_all_min_css__WEBPACK_IMPORTED_MODULE_1__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".article-short-wrapper[data-v-3073f1c4] {\n  text-decoration: none;\n  display: flex;\n  flex-direction: column;\n  flex-basis: 32%;\n  min-width: 250px;\n  padding: 20px 10px;\n  color: inherit;\n}\n.article-short-wrapper[data-v-3073f1c4]:visited, .article-short-wrapper[data-v-3073f1c4]:active {\n  color: inherit;\n}\n.article-short-wrapper[data-v-3073f1c4]:hover {\n  cursor: pointer;\n}\n.article-short-wrapper .article-thumb[data-v-3073f1c4] {\n  width: 100%;\n}\n.article-short-wrapper .article-info-wrapper[data-v-3073f1c4] {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  padding-top: 10px;\n}\n.article-short-wrapper .article-info-wrapper .article-title[data-v-3073f1c4] {\n  text-align: center;\n  font-size: 1.2rem;\n}\n.article-short-wrapper .article-info-wrapper .article-content[data-v-3073f1c4] {\n  font-size: 1rem;\n  padding-bottom: 10px;\n}\n.article-short-wrapper .article-info-wrapper .article-time-created[data-v-3073f1c4] {\n  font-size: 0.8rem;\n  color: #7f7a7a;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".article-short-wrapper[data-v-3073f1c4] {\n  text-decoration: none;\n  display: flex;\n  flex-direction: column;\n  flex-basis: 32%;\n  min-width: 250px;\n  padding: 20px 10px;\n  color: inherit;\n}\n.article-short-wrapper[data-v-3073f1c4]:visited, .article-short-wrapper[data-v-3073f1c4]:active {\n  color: inherit;\n}\n.article-short-wrapper[data-v-3073f1c4]:hover {\n  cursor: pointer;\n}\n.article-short-wrapper .article-thumb[data-v-3073f1c4] {\n  width: 100%;\n  flex-grow: 1;\n}\n.article-short-wrapper .article-info-wrapper[data-v-3073f1c4] {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  padding-top: 10px;\n}\n.article-short-wrapper .article-info-wrapper .article-title[data-v-3073f1c4] {\n  text-align: center;\n  font-size: 1.2rem;\n}\n.article-short-wrapper .article-info-wrapper .article-content[data-v-3073f1c4] {\n  font-size: 1rem;\n  padding-bottom: 10px;\n}\n.article-short-wrapper .article-info-wrapper .article-time-created[data-v-3073f1c4] {\n  font-size: 0.8rem;\n  color: #7f7a7a;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -925,29 +934,33 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("a", { staticClass: "article-short-wrapper" }, [
-    _c("img", {
-      staticClass: "article-thumb",
-      attrs: { src: _vm.getPath, alt: "Article thumbnail" },
-    }),
-    _vm._v(" "),
-    _c("div", { staticClass: "article-info-wrapper" }, [
-      _c("h5", { staticClass: "article-title" }, [_vm._v(_vm._s(_vm.title))]),
+  return _c(
+    "a",
+    { staticClass: "article-short-wrapper", attrs: { href: _vm.link } },
+    [
+      _c("img", {
+        staticClass: "article-thumb",
+        attrs: { src: _vm.getPath, alt: "Article thumbnail" },
+      }),
       _vm._v(" "),
-      _c("span", { staticClass: "article-content" }, [
-        _vm._v(_vm._s(_vm.content)),
+      _c("div", { staticClass: "article-info-wrapper" }, [
+        _c("h5", { staticClass: "article-title" }, [_vm._v(_vm._s(_vm.title))]),
+        _vm._v(" "),
+        _c("span", { staticClass: "article-content" }, [
+          _vm._v(_vm._s(_vm.content)),
+        ]),
+        _vm._v(" "),
+        _c(
+          "time",
+          {
+            staticClass: "article-time-created",
+            attrs: { datetime: "2001-05-15 19:00" },
+          },
+          [_vm._v("15 мая")]
+        ),
       ]),
-      _vm._v(" "),
-      _c(
-        "time",
-        {
-          staticClass: "article-time-created",
-          attrs: { datetime: "2001-05-15 19:00" },
-        },
-        [_vm._v("15 мая")]
-      ),
-    ]),
-  ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

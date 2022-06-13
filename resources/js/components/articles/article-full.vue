@@ -176,9 +176,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../sass/_mixins";
-@import "../../sass/_variables";
-@import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "../../../sass/_mixins";
+@import "../../../sass/_variables";
+@import "../../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 .home-wrapper {
     width: 100%;

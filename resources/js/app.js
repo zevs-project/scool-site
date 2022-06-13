@@ -15,8 +15,8 @@ import router from './routes.js';
 window.router = router;
 //window.Fire = new Vue();
 
-import navigation from './components/navigation.vue';
-import footerWrapper from './components/footerWrapper.vue';
+import navigation from './components/pageElement/navigation.vue';
+import footerWrapper from './components/pageElement/footerWrapper.vue';
 Vue.component('footerWrapper', footerWrapper); 
 Vue.component('navigation', navigation); 
 

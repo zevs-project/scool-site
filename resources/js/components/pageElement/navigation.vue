@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../sass/_variables";
+@import "../../../sass/_variables";
 
 .navigation {
     display: flex;

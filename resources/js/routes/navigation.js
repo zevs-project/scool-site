@@ -1,7 +1,7 @@
-const home = () => import("../components/home.vue");
-const news = () => import("../components/news.vue");
-const schoolboy = () => import("../components/schoolboy.vue");
-const timetable = () => import("../components/timetable.vue");
+const home = () => import("../components/pages/home.vue");
+const news = () => import("../components/pages/news.vue");
+const schoolboy = () => import("../components/pages/schoolboy.vue");
+const timetable = () => import("../components/pageElement/timetable.vue");
 const articlesForSchoolchildren = () => import("../components/articlesForSchoolchildren.vue");
 
 export default [

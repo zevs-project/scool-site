@@ -1,5 +1,5 @@
 <template>
-    <a class="article-short-wrapper">
+    <a class="article-short-wrapper" :href="link">
         <img class="article-thumb" :src="getPath" alt="Article thumbnail" />
 
         <div class="article-info-wrapper">
@@ -31,6 +31,10 @@ export default {
             type: String,
             default: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
+        link: {
+            type: String,
+            default: '',
+        }
     },
     data() {
         return {};
@@ -68,6 +72,7 @@ export default {
 
     .article-thumb {
         width: 100%;
+        flex-grow: 1;
     }
 
     .article-info-wrapper {
