@@ -3,7 +3,16 @@
         <h1 class="news-title">Цікаві статті</h1>
 
         <div class="news-wrapper">
-           <article-short v-for="(article, articleId) in articles" :key="articleId" :path="article.thumb" :title="article.title" :content="article.content"></article-short>
+            <aside-menu></aside-menu>
+            <div class="articles-wrapper">
+                <article-short
+                    v-for="(article, articleId) in articles"
+                    :key="articleId"
+                    :path="article.thumb"
+                    :title="article.title"
+                    :content="article.content"
+                ></article-short>
+            </div>
         </div>
 
         <div class="news-show-more">More News</div>
@@ -12,47 +21,49 @@
 
 <script>
 import image3 from "../../../../public/images/image3.jpg";
-import articleShort from '../../components/articles/article-short.vue';
+import articleShort from "../../components/articles/article-short.vue";
+import asideMenu from "../pageElement/aside-menu.vue";
 
 export default {
     name: "news",
     components: {
         articleShort,
+        asideMenu,
     },
     data() {
         return {
             image3,
-             articles: [
+            articles: [
                 {
                     thumb: image3,
                     title: "Title 1",
                     content: "Text article 1",
-                    link: '',
+                    link: "",
                 },
                 {
                     thumb: image3,
                     title: "Title 1",
                     content: "Text article 1",
-                    link: '',
+                    link: "",
                 },
                 {
                     thumb: image3,
                     title: "Title 1",
                     content: "Text article 1",
-                    link: '',
+                    link: "",
                 },
                 {
                     thumb: image3,
                     title: "Title 1",
                     content: "Text article 1",
-                    link: '',
+                    link: "",
                 },
                 {
                     thumb: image3,
                     title: "Title 1",
                     content: "Text article 1",
-                    link: '',
-                }
+                    link: "",
+                },
             ],
         };
     },
@@ -75,52 +86,63 @@ export default {
     .news-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 70%;
+        justify-content: space-between;
+        width: 100%;
         padding: 20px 0 0 0;
 
-        .news-link {
-            text-decoration: none;
+        .articles-wrapper {
             display: flex;
-            flex-direction: column;
-            flex-basis: 25%;
-            padding: 20px 10px;
-            color: inherit;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            flex-basis: 80%;
 
-            &:visited,
-            &:active {
-                color: inherit;
-            }
-
-            &:hover {
-                cursor: pointer;
-            }
-
-            .news-thumb {
-                width: 100%;
-            }
-
-            .news-info-wrapper {
-                width: 100%;
+            .news-link {
+                text-decoration: none;
                 display: flex;
                 flex-direction: column;
-                padding-top: 10px;
+                flex-basis: 25%;
+                padding: 20px 10px;
+                color: inherit;
 
-                .news-title {
-                    text-align: center;
-                    font-size: $titleFontSize;
+                &:visited,
+                &:active {
+                    color: inherit;
                 }
 
-                .news-short {
-                    font-size: 1rem;
-                    padding-bottom: 10px;
+                &:hover {
+                    cursor: pointer;
                 }
 
-                time {
-                    font-size: 0.8rem;
-                    color: $colorTime;
+                .news-thumb {
+                    width: 100%;
+                }
+
+                .news-info-wrapper {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 10px;
+
+                    .news-title {
+                        text-align: center;
+                        font-size: $titleFontSize;
+                    }
+
+                    .news-short {
+                        font-size: 1rem;
+                        padding-bottom: 10px;
+                    }
+
+                    time {
+                        font-size: 0.8rem;
+                        color: $colorTime;
+                    }
                 }
             }
+        }
+
+        .aside {
+            flex-grow: 1;
         }
     }
 
