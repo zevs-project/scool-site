@@ -15,6 +15,9 @@
 <script>
 export default {
     name: "aside-menu",
+    props: {
+        categories: {}
+    },
     data() {
         return {};
     },
