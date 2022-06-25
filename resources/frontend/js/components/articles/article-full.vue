@@ -144,9 +144,9 @@
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
-import image1 from "../../../../public/frontend/images/image1.jpg";
-import image2 from "../../../../public/frontend/images/image2.jpg";
-import image3 from "../../../../public/frontend/images/image3.jpg";
+import image1 from "./../../../../public/frontend/images/image1.jpg";
+import image2 from "./../../../../public/frontend/images/image2.jpg";
+import image3 from "./../../../../public/frontend/images/image3.jpg";
 
 export default {
     name: "home",

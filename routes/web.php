@@ -23,8 +23,15 @@ Route::get('/', function () {
     }
 ])->where('any', '.*'); */
 
+Route::get('/admin', [
+    function() {
+        return view('crud');
+    }
+]);
+
 Route::get('/', [
     function () {
         return view('welcome');
     }
 ]);
+
