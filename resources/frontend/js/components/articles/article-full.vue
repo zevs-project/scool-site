@@ -29,7 +29,78 @@
         <div class="home-content-block news">
             <h2 class="home-content-title news-title">Новини</h2>
             <div class="news-wrapper">
-                <article-short v-for="(article, articleId) in articles" :key="articleId" :path="article.thumb" :title="article.title" :content="article.content"></article-short>
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
+
+                    <div class="news-info-wrapper">
+                        <h5 class="news-title">Title 1</h5>
+                        <span class="news-short"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</span
+                        >
+                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
+
+                    <div class="news-info-wrapper">
+                        <h5 class="news-title">Title 1</h5>
+                        <span class="news-short"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</span
+                        >
+                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
+
+                    <div class="news-info-wrapper">
+                        <h5 class="news-title">Title 1</h5>
+                        <span class="news-short"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</span
+                        >
+                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
+
+                    <div class="news-info-wrapper">
+                        <h5 class="news-title">Title 1</h5>
+                        <span class="news-short"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</span
+                        >
+                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
+
+                    <div class="news-info-wrapper">
+                        <h5 class="news-title">Title 1</h5>
+                        <span class="news-short"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</span
+                        >
+                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
+                <a class="news-link">
+                    <img class="news-thumb" :src="image1" alt="Image 1" />
+
+                    <div class="news-info-wrapper">
+                        <h5 class="news-title">Title 1</h5>
+                        <span class="news-short"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</span
+                        >
+                        <time datetime="2001-05-15 19:00">15 мая</time>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -73,55 +144,21 @@
 
 <script>
 import { Carousel, Slide } from "vue-carousel";
-import image1 from "../../../../public/images/image1.jpg";
-import image2 from "../../../../public/images/image2.jpg";
-import image3 from "../../../../public/images/image3.jpg";
-import articleShort from '../articles/article-short.vue';
+import image1 from "../../../../public/frontend/images/image1.jpg";
+import image2 from "../../../../public/frontend/images/image2.jpg";
+import image3 from "../../../../public/frontend/images/image3.jpg";
 
 export default {
     name: "home",
     components: {
         Carousel,
         Slide,
-        articleShort,
     },
     data() {
         return {
             image1,
             image2,
             image3,
-            articles: [
-                {
-                    thumb: image1,
-                    title: "Title 1",
-                    content: "Text article 1",
-                    link: '',
-                },
-                {
-                    thumb: image2,
-                    title: "Title 1",
-                    content: "Text article 1",
-                    link: '',
-                },
-                {
-                    thumb: image3,
-                    title: "Title 1",
-                    content: "Text article 1",
-                    link: '',
-                },
-                {
-                    thumb: image1,
-                    title: "Title 1",
-                    content: "Text article 1",
-                    link: '',
-                },
-                {
-                    thumb: image2,
-                    title: "Title 1",
-                    content: "Text article 1",
-                    link: '',
-                }
-            ],
             carouselConfig1: {
                 centerMode: true,
                 autoplay: true,
@@ -141,7 +178,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../../sass/_mixins";
 @import "../../../sass/_variables";
-@import "../../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "./../../../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 .home-wrapper {
     width: 100%;
@@ -224,9 +261,54 @@ export default {
             .news-wrapper {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: flex-start;
+                justify-content: center;
                 width: 70%;
                 padding: 20px 0 0 0;
+
+                .news-link {
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    flex-basis: 32%;
+                    min-width: 250px;
+                    padding: 20px 10px;
+                    color: inherit;
+
+                    &:visited,
+                    &:active {
+                        color: inherit;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    .news-thumb {
+                        width: 100%;
+                    }
+
+                    .news-info-wrapper {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 10px;
+
+                        .news-title {
+                            text-align: center;
+                            font-size: 1.2rem;
+                        }
+
+                        .news-short {
+                            font-size: 1rem;
+                            padding-bottom: 10px;
+                        }
+
+                        time {
+                            font-size: 0.8rem;
+                            color: $colorTime;
+                        }
+                    }
+                }
             }
         }
 

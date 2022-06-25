@@ -1,0 +1,36 @@
+// Fonts
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+body {
+    font-size: 16px;
+    color: $colorContent;
+}
+
+#app {
+    font-family:  $fontFamily;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    margin: 0  auto;
+    background: rgb(232 232 232 / 13%);
+}
+
+a {
+    &:visited,
+    &:active {
+        color: inherit;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+

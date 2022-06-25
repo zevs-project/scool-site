@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import image3 from "../../../../public/images/image3.jpg";
+import image3 from "./../../../../../public/frontend/images/image3.jpg";
 import articleShort from '../articles/article-short.vue';
 
 export default {

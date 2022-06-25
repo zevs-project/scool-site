@@ -51,7 +51,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../../sass/mixins";
 @import "../../../sass/_variables";
-@import "../../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import "./../../../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 .article-short-wrapper {
     text-decoration: none;
     display: flex;

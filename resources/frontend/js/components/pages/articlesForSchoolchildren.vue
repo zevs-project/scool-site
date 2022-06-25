@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import image3 from "../../../../public/images/image3.jpg";
+import image3 from "./../../../../../public/frontend/images/image3.jpg";
 import articleShort from "../../components/articles/article-short.vue";
 import asideMenu from "../pageElement/aside-menu.vue";
 
