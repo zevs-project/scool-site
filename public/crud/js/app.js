@@ -5384,10 +5384,18 @@ var admin = function admin() {
   return __webpack_require__.e(/*! import() */ "resources_crud_js_components_admin_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/admin.vue */ "./resources/crud/js/components/admin.vue"));
 };
 
+var read = function read() {
+  return __webpack_require__.e(/*! import() */ "resources_crud_js_components_pages_read_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/pages/read.vue */ "./resources/crud/js/components/pages/read.vue"));
+};
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
   path: "/admin",
   component: admin,
   name: "admin"
+}, {
+  path: "/read/:id",
+  component: read,
+  name: "read"
 }]);
 
 /***/ }),
@@ -43125,6 +43133,18 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -43155,7 +43175,7 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if (chunkId === "resources_crud_js_components_admin_vue") return "frontend/js/" + chunkId + ".js";
+/******/ 			if ({"resources_crud_js_components_admin_vue":1,"resources_crud_js_components_pages_read_vue":1}[chunkId]) return "frontend/js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
