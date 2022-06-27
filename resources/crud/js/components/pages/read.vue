@@ -29,7 +29,7 @@
             </div>
         </div>
 
-        <action-button :text="'Add row'"></action-button>
+        <action-button :text="'Add row'" @click.native="gotoAddRow"></action-button>
     </div>
 </template>
 
@@ -96,6 +96,15 @@ export default {
             immediate: true,
         },
     },
+    mounted() {
+ console.log(this.$route);
+    },
+    methods: {
+        gotoAddRow() {
+            const tableId = this.$route.params.tableId;
+            this.$router.push({ name: "create", params: { table: tableId } });
+        }
+    }
 };
 </script>
 

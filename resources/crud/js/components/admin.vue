@@ -14,6 +14,8 @@
                 ></action-button>
             </div>
         </div>
+
+        <router-view></router-view>
     </div>
 </template>
 
@@ -45,8 +47,9 @@ export default {
     },
     methods: {
         gotoChangeTable(tableId) {
-            this.$router.push({ name: "read", params: { id: tableId } });
+            this.$router.push({ name: "read", params: { table: tableId } });
         },
+       
     },
 };
 </script>

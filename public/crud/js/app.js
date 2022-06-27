@@ -5388,14 +5388,30 @@ var read = function read() {
   return __webpack_require__.e(/*! import() */ "resources_crud_js_components_pages_read_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/pages/read.vue */ "./resources/crud/js/components/pages/read.vue"));
 };
 
+var create = function create() {
+  return __webpack_require__.e(/*! import() */ "resources_crud_js_components_pages_create_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/pages/create.vue */ "./resources/crud/js/components/pages/create.vue"));
+};
+
+var update = function update() {
+  return __webpack_require__.e(/*! import() */ "resources_crud_js_components_pages_update_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/pages/update.vue */ "./resources/crud/js/components/pages/update.vue"));
+};
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
+  path: "/admin/update/:table/:rowId",
+  component: update,
+  name: "update"
+}, {
+  path: "/admin/create",
+  component: create,
+  name: "create"
+}, {
+  path: "/admin/read/:table",
+  component: read,
+  name: "read"
+}, {
   path: "/admin",
   component: admin,
   name: "admin"
-}, {
-  path: "/read/:id",
-  component: read,
-  name: "read"
 }]);
 
 /***/ }),
@@ -43175,7 +43191,7 @@ module.exports = JSON.parse('{"_from":"axios@^0.21","_id":"axios@0.21.4","_inBun
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_crud_js_components_admin_vue":1,"resources_crud_js_components_pages_read_vue":1}[chunkId]) return "frontend/js/" + chunkId + ".js";
+/******/ 			if ({"resources_crud_js_components_admin_vue":1,"resources_crud_js_components_pages_read_vue":1,"resources_crud_js_components_pages_create_vue":1,"resources_crud_js_components_pages_update_vue":1}[chunkId]) return "frontend/js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

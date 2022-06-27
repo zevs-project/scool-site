@@ -31,6 +31,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -56,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
       this.$router.push({
         name: "read",
         params: {
-          id: tableId
+          table: tableId
         }
       });
     }
@@ -682,32 +684,36 @@ var render = function () {
   return _c(
     "div",
     { staticClass: "admin-wrapper" },
-    _vm._l(_vm.listOfTables, function (table) {
-      return _c("div", { key: table.id, staticClass: "table-wrapper" }, [
-        _c(
-          "div",
-          { staticClass: "row-wrapper" },
-          [
-            _c("span", {
-              staticClass: "table-name",
-              domProps: { innerHTML: _vm._s(table.name) },
-            }),
-            _vm._v(" "),
-            _c("action-button", {
-              staticClass: "change-button",
-              attrs: { text: "Редагувати таблицю" },
-              on: {
-                "button-click": function ($event) {
-                  return _vm.gotoChangeTable(table.id)
+    [
+      _vm._l(_vm.listOfTables, function (table) {
+        return _c("div", { key: table.id, staticClass: "table-wrapper" }, [
+          _c(
+            "div",
+            { staticClass: "row-wrapper" },
+            [
+              _c("span", {
+                staticClass: "table-name",
+                domProps: { innerHTML: _vm._s(table.name) },
+              }),
+              _vm._v(" "),
+              _c("action-button", {
+                staticClass: "change-button",
+                attrs: { text: "Редагувати таблицю" },
+                on: {
+                  "button-click": function ($event) {
+                    return _vm.gotoChangeTable(table.id)
+                  },
                 },
-              },
-            }),
-          ],
-          1
-        ),
-      ])
-    }),
-    0
+              }),
+            ],
+            1
+          ),
+        ])
+      }),
+      _vm._v(" "),
+      _c("router-view"),
+    ],
+    2
   )
 }
 var staticRenderFns = []

@@ -143,6 +143,20 @@ __webpack_require__.r(__webpack_exports__);
       deep: true,
       immediate: true
     }
+  },
+  mounted: function mounted() {
+    console.log(this.$route);
+  },
+  methods: {
+    gotoAddRow: function gotoAddRow() {
+      var tableId = this.$route.params.tableId;
+      this.$router.push({
+        name: "create",
+        params: {
+          table: tableId
+        }
+      });
+    }
   }
 });
 
@@ -792,7 +806,14 @@ var render = function () {
         0
       ),
       _vm._v(" "),
-      _c("action-button", { attrs: { text: "Add row" } }),
+      _c("action-button", {
+        attrs: { text: "Add row" },
+        nativeOn: {
+          click: function ($event) {
+            return _vm.gotoAddRow.apply(null, arguments)
+          },
+        },
+      }),
     ],
     1
   )
