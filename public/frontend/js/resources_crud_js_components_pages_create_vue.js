@@ -17,7 +17,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      cellNames: []
+    };
+  },
+  watch: {
+    table: {
+      handler: function handler() {
+        this.cellNames = [{
+          author: "author name",
+          title: "title",
+          content: "article content",
+          created_at: "created date",
+          updated_at: "updated date"
+        }];
+      },
+      deep: true,
+      immediate: true
+    }
+  }
+});
 
 /***/ }),
 

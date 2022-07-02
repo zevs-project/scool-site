@@ -92,7 +92,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: {
-    tableId: {
+    table: {
       type: String,
       "default": "table1"
     }
@@ -102,11 +102,12 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      cellList: []
+      cellList: [] // list of cell from table in database, include values and column name
+
     };
   },
   watch: {
-    tableId: {
+    table: {
       handler: function handler() {
         this.cellList = [{
           author: "author name",
@@ -144,16 +145,14 @@ __webpack_require__.r(__webpack_exports__);
       immediate: true
     }
   },
-  mounted: function mounted() {
-    console.log(this.$route);
-  },
+  mounted: function mounted() {},
   methods: {
     gotoAddRow: function gotoAddRow() {
-      var tableId = this.$route.params.tableId;
+      var table = this.$route.params.table;
       this.$router.push({
         name: "create",
         params: {
-          table: tableId
+          table: table
         }
       });
     }

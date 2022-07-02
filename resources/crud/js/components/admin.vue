@@ -47,7 +47,7 @@ export default {
     },
     methods: {
         gotoChangeTable(tableId) {
-            this.$router.push({ name: "read", params: { table: tableId } });
+            this.$router.push({ name: "read", params: { table: "tasdtsd" } });
         },
        
     },

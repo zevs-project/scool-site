@@ -5401,7 +5401,7 @@ var update = function update() {
   component: update,
   name: "update"
 }, {
-  path: "/admin/create",
+  path: "/admin/create/:table",
   component: create,
   name: "create"
 }, {

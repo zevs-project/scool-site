@@ -38,7 +38,7 @@ import actionButton from "./../library/buttons/actionButton.vue";
 
 export default {
     props: {
-        tableId: {
+        table: {
             type: String,
             default: "table1",
         },
@@ -48,11 +48,11 @@ export default {
     },
     data() {
         return {
-            cellList: [],
+            cellList: [],// list of cell from table in database, include values and column name
         };
     },
     watch: {
-        tableId: {
+        table: {
             handler: function () {
                 this.cellList = [
                     {
@@ -97,13 +97,12 @@ export default {
         },
     },
     mounted() {
- console.log(this.$route);
     },
     methods: {
         gotoAddRow() {
-            const tableId = this.$route.params.tableId;
-            this.$router.push({ name: "create", params: { table: tableId } });
-        }
+            const table = this.$route.params.table;
+            this.$router.push({ name: "create", params: { table: table } });
+        },
     }
 };
 </script>

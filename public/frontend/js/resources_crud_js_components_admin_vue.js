@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
       this.$router.push({
         name: "read",
         params: {
-          table: tableId
+          table: "tasdtsd"
         }
       });
     }

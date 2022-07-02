@@ -10,7 +10,7 @@ export default [
         name: "update",
     },
     {
-        path: "/admin/create",
+        path: "/admin/create/:table",
         component: create,
         name: "create",
     },
